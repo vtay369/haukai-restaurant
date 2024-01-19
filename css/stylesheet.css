@@ -1817,7 +1817,7 @@ TABLE OF CONTENTS
           background-color: var(--dark);
           color: var(--pale);
           width: 100%;
-          min-height: 520px;
+          min-height: 430px;
       }
 
       .sidebar .navbar a {
@@ -2295,14 +2295,6 @@ TABLE OF CONTENTS
 
       #header {
           margin-bottom: 20px;
-      }
-
-      ul li a {
-          padding: 12px 10px;
-      }
-
-      .sidebar {
-          min-height: 420px;
       }
 
       /* css background images */
