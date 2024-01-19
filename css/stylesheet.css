@@ -163,10 +163,8 @@ TABLE OF CONTENTS
       position: absolute;
       z-index: 2;
       display: none;
-      left: 120px;
-      top: 10px;
   }
-
+ 
   ul li:hover ul.dropdown {
       display: block;
   }
@@ -1849,6 +1847,11 @@ TABLE OF CONTENTS
       .navbar {
           flex-direction: column;
           background-color: var(--dark);
+      }
+
+      ul li ul.dropdown{
+        left: 120px;
+        top: 10px;
       }
 
       /* -- font-size -- */
