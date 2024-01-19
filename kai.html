@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- new message -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Haukai Restaurant</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <script src="https://kit.fontawesome.com/3cd9bc84f9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+
+        <aside aria-label="The Haukai Restaurant logo" class="logo"><a href="/">
+                <h3 class="logo-title">The<br>
+                    Haukai</h3>
+                <h4 class="logo-subtitle">Restaurant</h4>
+                <figure aria-label="logo underline">
+                <img src="./images/underline.png" alt="Logo underline">
+                </figure>
+            </a> </aside>
+            <label aria-label="mobile-menu" id="hidden-label" class="hamburger-menu">
+                <input type="checkbox" aria-labelledby="hidden-label" title="drop-down menu checkbox"> <span class="mobile-menu">Mobile menu</span> 
+            </label>
+        <aside aria-label="navigation sliding sidebar" class="sidebar">
+            <nav class="nav-container">
+                <ul class="navbar">
+                    <li id="home-nav"><a href="/">Home</a> </li>
+                    <li><a href="/reservations.html">Reservations</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/hours.html">Hours</a></li>
+                    <li><a href="/menu.html">Menu</a></li>
+                    <li>
+                        <div class="maori-wrapper">
+                            <div class="maori"><a href="#">M&amacr;ori</a></div>
+                            <div class="icon"> <i class="fa-solid fa-caret-down" style="color: #786247;"></i></div>
+                        </div>
+                        <ul class="dropdown">
+                            <li><a href="/culture.html">Culture</a></li>
+                            <li><a href="/kai.html"> Kai</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/gift-vouchers.html">Vouchers</a> </li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </header>
+    <main id="kai">
+        <div class="image-cover"></div>
+        <div class="landscape" role="img" aria-label="beauty of new-zealand's land and sea"></div>
+        <div class="our-restaurant">
+            <h1>Discover Maori kai</h1>
+            <h3 id="statement"> Indigenous food from New Zealand's land (kaiwhenua) and sea
+                (kaimoana).</h3>
+        </div>
+        <div class="audio">
+            <div class="info-here"> </div>
+            <figure class="audio-info">
+                <figcaption>NZ native birds singing from silver beech trees
+                </figcaption>
+                <audio controls>
+                    <source src="/audio/10-bellbird-morning-chorus.mp3" type="audio/mp3">
+                    <source src="/audio/10-bellbird-morning-chorus.ogg" type="audio/ogg">
+                    <p> Your browser does not support the <code>audio</code> element. </p>
+                </audio>
+                <a href="https://www.doc.govt.nz/nature/native-animals/birds/bird-songs-and-calls/"> Source: Department of Conservation</a>
+            </figure>
+        </div>
+        <hr>
+
+        <section aria-label="new-zealand native ingredients">
+            <div class="native-ingredient-intro">
+                <h2>Native ingredients</h2>
+                <p>The Maori people have a word for food, which is "kai". Their traditional cuisine mainly comprises
+                    indigenous ingredients obtained from New Zealand's sea and land. They also have Polynesian food,
+                    such as kumara, yam, taro, and the Polynesian rat (Kiore) and dog (Kuri) that were brought from
+                    Hawaiki. Thanks to their exceptional hunting, gathering, and crop farming abilities, the Maori
+                    people could gather food from forests, streams, seas, and gardens, which are their primary sources
+                    of ingredients for their meals.
+                </p>
+            </div>
+            <section aria-label="new-zealand ingredients" class="nz-ingredients-container">
+                <h3 class="land">Kaiwhenua</h3>
+                <h3 class="sea">Kaimoana</h3>
+                <section aria-label="new-zealand ingredients from forest" class="forest">
+                    <h4>Foraged forest</h4>
+                    <ul class="native-ingredients">
+                        <li>Pilopilo: fern </li>
+                        <li>Fruit</li>
+                        <li>Seeds</li>
+                        <li>Horopito leaves</li>
+                        <li>Vines</li>
+                        <li>Fungi</li>
+                        <li>Puha</li>
+                        <li>Kawakawa</li>
+                        <li>K&omacr;mata: cabbage tree</li>
+                    </ul>
+                </section>
+                <section aria-label="new-zealand animal food list" class="animal-food">
+                    <h4>Animal food</h4>
+                    <ul class="native-ingredients">
+                        <li>Huhu grubs</li>
+                        <li>Moa</li>
+                        <li>Weka</li>
+                        <li>Kerer&umacr;: wood-pigeon</li>
+                        <li>T&umacr;&imacr;</li>
+                        <li>Whio: native ducks</li>
+                        <li>Takah&emacr;</li>
+                        <li>Seabirds</li>
+                        <li>T&imacr;t&imacr;: muttonbird</li>
+                    </ul>
+                </section>
+
+                <section aria-label="new-zealand sealife list" class="sea-life">
+                    <h4>Sea life</h4>
+                    <ul class="native-ingredients">
+                        <li>lka: fish</li>
+                        <li>K&omacr;ura: crayfish</li>
+                        <li>Wheke: octopus</li>
+                        <li>Karengo: seaweed</li>
+                        <li>K&omacr;whitiwhiti: watercress</li>
+                        <li>Inganga: whitebait</li>
+                        <li>H&amacr;mana: salmon</li>
+                        <li>Eels</li>
+                        <li>Tio: oyster</li>
+                    </ul>
+                </section>
+
+                <section aria-label="new-zealand shellfish list" class="shellfishs">
+                    <h4>Shellfish</h4>
+                    <ul class="native-ingredients">
+                        <li>Kuku: mussels</li>
+                        <li>P&umacr;p&umacr;</li>
+                        <li>Titiko: mud snails</li>
+                        <li>Kina: sea egg</li>
+                        <li>Pipi Tuangi: cockle</li>
+                        <li>P&amacr;ua: abalone</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section aria-label="Image collage of new-zealand native ingredients" class="kaiwhenua-images">
+                <figure aria-label="Fern shoot" class="menu-image fern">
+                    <img src="./images/fern.jpg" alt="fern shoot" title="Fern shoot" class="gallery-image">
+                </figure>
+                <figure aria-label="Puha" class="menu-image puha">
+                    <img src="./images/puha.jpg" alt="puha" title="Puha" class="gallery-image">
+                </figure>
+                <figure aria-label="Horopito leaves" class="menu-image horopito">
+                    <img src="./images/horopito.jpg" alt="horopito tree" title="Horopito leaves" class="gallery-image">
+                </figure>
+                <figure aria-label="Huhu grubs" class="menu-image huhu">
+                    <img src="./images/huhu.jpg" alt="huhu grubs" title="Huhu grubs" class="gallery-image">
+                </figure>
+                <figure aria-label="Moa sculpture" class="menu-image moa">
+                    <img src="./images/moa.jpg" alt="Wooden Moa" class="gallery-image" title="Moa">
+                </figure>
+                <figure aria-label="Kereru" class="menu-image kereru ">
+                    <img src="./images/kereru.jpg" alt="kereru" class="gallery-image" title="Kereru">
+                </figure>
+                <figure aria-label="Muttonbird" class="menu-image muttonbird ">
+                    <img src="./images/muttonbird.jpg" alt="Young muttonbird" class="gallery-image" title="Muttonbird">
+                </figure>
+                <figure aria-label="whitebait" class="menu-image whitebait">
+                    <img src="./images/whitebait.jpg" alt="whitebait" class="gallery-image" title="Whitebait">
+                </figure>
+                <figure aria-label="Paua" class="menu-image paua ">
+                    <img src="./images/paua.jpg" alt="paua shell" class="gallery-image" title="Paua shell">
+                </figure>
+                <figure aria-label="eels" class="menu-image eels">
+                    <img src="./images/eels.jpg" alt="eels" class="gallery-image" title="Eels">
+                </figure>
+                <figure aria-label="Kina" class="menu-image kina">
+                    <img src="./images/kina.jpg" alt="kina" class="gallery-image" title="Kina">
+                </figure>
+                <figure aria-label="Pipi" class="menu-image pipi">
+                    <img src="./images/pipi.jpg" alt="pipi" class="gallery-image" title="Pipi">
+                </figure>
+            </div>
+        </section>
+
+        <section aria-label="Introduced food into New Zealand" class="introduced">
+            <h2>Introduced foods from P&amacr;keh&amacr; settlers</h2>
+            <p>The climate of New Zealand was suitable for many of the foods introduced by Pakeha settlers, such as
+                wheat, potatoes, maize, corn, carrots, cabbage, sheep, pigs, goats, and poultry. As a result, many
+                traditional foods were left behind. Despite the difficulties, Maori cuisine has evolved by blending
+                both
+                traditional and introduced foods, creating a distinctive culinary culture.
+            </p>
+        </section>
+
+        <section aria-label="Traditional maori recipes" class="maori-recipes">
+            <div class="maori-recipes-intro">
+                <h2>Traditional Maori recipes </h2>
+                <p>The Hangi is a traditional Polynesian cooking method that involves smoking, steaming, and baking
+                    food.
+                    This cooking method is believed to create a unique flavour that is considered a gift from the
+                    gods. In
+                    modern times, Hāngī has been modified to use mutton cloth, aluminium foil, and wire baskets
+                    instead of
+                    flax leaves. The food is then placed in these baskets and put on hot stones at the bottom of a
+                    hole dug
+                    into the ground. The Hāngī is generally left in the ground for about three to four hours,
+                    although the
+                    cooking time may vary depending on the amount of food prepared. This centuries-old cooking
+                    method is
+                    perfect for feeding a large crowd and bringing a community together.</p>
+            </div>
+            <div class="recipes">
+                <div class="hangi recipes-squares">
+                    <div class="cover">
+                        <a href="https://juandurco.wixsite.com/newzeland/maori--hangi-recipe">Hangi</a>
+                    </div>
+                </div>
+                <div class="muscles recipes-squares">
+                    <div class="cover">
+                        <a href="https://www.rnz.co.nz/collections/recipes/toroi-puha-and-mussel-salad">Toro: Puha
+                            &amp;
+                            mussels</a>
+                    </div>
+                </div>
+
+                <div class="boil-up recipes-squares">
+                    <div class="cover">
+                        <a href="https://www.mindfood.com/recipe/traditional-maori-recipes/">Boil-up: Pork &amp;
+                            Puha</a>
+                    </div>
+                </div>
+
+                <div class="maori-bread recipes-squares">
+                    <div class="cover">
+                        <a href="https://www.mindfood.com/recipe/traditional-maori-recipes/"> R&emacr;wena: Maori
+                            Bread</a>
+                    </div>
+                </div>
+
+                <div class="fried-bread recipes-squares">
+                    <div class="cover">
+                        <a href="https://maimoa.nz/blogs/news/the-best-fry-bread-recipe"> Par&amacr;oa Parai: Fry
+                            Bread</a>
+                    </div>
+                </div>
+
+                <div class="paua-fritter recipes-squares">
+                    <div class="cover">
+                        <a href="https://www.mindfood.com/recipe/traditional-maori-recipes/"> Paua Fritter</a>
+                    </div>
+                </div>
+
+                <div class="ika-mata recipes-squares">
+                    <div class="cover">
+                        <a href="https://www.rnz.co.nz/collections/recipes/ika-mata"> Ika Mata: Raw Fish </a>
+                    </div>
+                </div>
+
+                <div class="huhu recipes-squares">
+                    <div class="cover">
+                        <a
+                            href="https://www.rnz.co.nz/collections/recipes/huhu-grubs#:~:text=Huhu%20grubs%20have%20their%20own,they're%20ready%20to%20eat.">
+                            Fried Huhu Grubs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="buttons reserve">
+            <a class="top" href="#header" title="Scroll to top">To top</a>
+            <a class="reserve-btn" href="./menu.html" title="Menu">Menu</a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <aside aria-label="Staff login to roster" class="staff">
+                <i class="fa-solid fa-user fa-lg"></i>
+                <h4><a href="/staff.html"> Staff login</a></h4>
+            </aside>
+            <aside aria-label="phone contact">
+                <i class="fa-solid fa-phone fa-lg "></i>
+                <h4>Phone</h4>
+                <p>094014019</p>
+            </aside>
+            <aside aria-label="location">
+                <i class="fa-solid fa-location-dot fa-lg"></i>
+                <h4>Location</h4>
+                <p> 1 Island Street <br>
+                    Kerikeri, Bay of Islands</p>
+            </aside>
+            <aside aria-label="hours" class="opening-hours">
+                <i class="fa-solid fa-clock fa-lg "></i>
+                <h4>Opening Hours</h4>
+                <ul class="hours">
+                    <li>Wednesday - 5pm to 10pm</li>
+                    <li>Thursday - 5pm to 10pm</li>
+                    <li>Friday - 5pm to 10pm</li>
+                    <li>Saturday - 5pm to 10pm</li>
+                    <li>Sunday - 5pm to 10pm</li>
+                </ul>
+            </aside>
+
+        </div>
+        <p class="copywright">&copy; The Haukai Resturant</p>
+    </footer>
+</body>
+
+</html>
