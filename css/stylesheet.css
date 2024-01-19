@@ -562,63 +562,63 @@ TABLE OF CONTENTS
   }
 
   .restaurant-image {
-      background-image: url("/images/restaurant2.jpg");
+      background-image: url("../images/restaurant2.jpg");
   }
 
   .book {
-      background-image: url(/images/reserve.jpg);
+      background-image: url("../images/reserve.jpg");
   }
 
   .chef {
-      background-image: url(/images/chef.jpg);
+      background-image: url("../images/chef.jpg");
   }
 
   .landscape {
-      background-image: url(/images/landscape.jpg);
+      background-image: url("../images/landscape.jpg");
   }
 
   .hangi {
-      background-image: url(/images/hangi.jpg);
+      background-image: url("../images/hangi.jpg");
   }
 
   .muscles {
-      background-image: url(/images/muscles.jpg);
+      background-image: url("../images/muscles.jpg");
   }
 
   .boil-up {
-      background-image: url(/images/boil.jpg);
+      background-image: url("../images/boil.jpg");
   }
 
   .fried-bread {
-      background-image: url(/images/fried-bread.jpg);
+      background-image: url("../images/fried-bread.jpg");
   }
 
   .maori-bread {
-      background-image: url(/images/maori-bread.jpg);
+      background-image: url("../images/maori-bread.jpg");
   }
 
   .huhu {
-      background-image: url(/images/huhu.jpg);
+      background-image: url("../images/huhu.jpg");
   }
 
   .paua-fritter {
-      background-image: url(/images/paua-fritter.jpg);
+      background-image: url("../images/paua-fritter.jpg");
   }
 
   .ika-mata {
-      background-image: url(/images/ika-mata.jpg);
+      background-image: url("../images/ika-mata.jpg");
   }
 
   .our-story-image {
-      background-image: url(/images/maori.jpg);
+      background-image: url("../images/maori.jpg");
   }
 
   .carve {
-      background-image: url(/images/carve.jpg);
+      background-image: url("../images/carve.jpg");
   }
 
   .gift-voucher {
-      background-image: url(/images/gift.jpg);
+      background-image: url("../images/gift.jpg");
   }
 
   /* ===== 14. Borders ===== */
