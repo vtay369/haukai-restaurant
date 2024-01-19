@@ -1852,6 +1852,7 @@ TABLE OF CONTENTS
       ul li ul.dropdown{
         left: 120px;
         top: 10px;
+        padding-top: 20px;
       }
 
       /* -- font-size -- */
