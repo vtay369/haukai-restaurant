@@ -1380,11 +1380,11 @@ TABLE OF CONTENTS
 
   /* #########  16i. Contact  ######### */
 
-  .map {
-      margin-bottom: 60px;
-      height: 600px;
-  }
 
+  .map img {
+    max-height: 100vh;
+    max-width: 100vw;
+  }
   /* #########  16j. Roster  ######### */
 
 .lucy, .gareth {
