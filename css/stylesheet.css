@@ -1387,9 +1387,9 @@ TABLE OF CONTENTS
 
   /* #########  16j. Roster  ######### */
 
-  #staff .iframe-container {
-      height: 700px;
-  }
+.lucy, .gareth {
+    padding: 20px 10px;
+}
 
   /* ===== 17. Footer ===== */
 
