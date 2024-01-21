@@ -99,10 +99,12 @@ TABLE OF CONTENTS
       height: 5px;
       transform: translate(0, -10px);
   }
+
   .logo figure {
-    padding: 0;
-    margin: 0;
+      padding: 0;
+      margin: 0;
   }
+
   /* ===== 3. navigation ===== */
 
   .hamburger-menu {
@@ -164,7 +166,7 @@ TABLE OF CONTENTS
       z-index: 2;
       display: none;
   }
- 
+
   ul li:hover ul.dropdown {
       display: block;
   }
@@ -725,10 +727,12 @@ TABLE OF CONTENTS
       margin: 0;
       padding: 0;
   }
+
   .card p {
-    margin: 3px 0;
-    line-height: 1.5;
+      margin: 3px 0;
+      line-height: 1.5;
   }
+
   /* #########  16b. About  ######### */
 
   #our-story-article .our-restaurant {
@@ -1384,21 +1388,24 @@ TABLE OF CONTENTS
       padding: 40px 0 0;
       height: 600px;
   }
+
   .map img {
-    display: block;
-    margin: auto;
-    box-shadow: var(--shadow-elevation-medium);
-    border-radius: 8px;
+      display: block;
+      margin: auto;
+      box-shadow: var(--shadow-elevation-medium);
+      border-radius: 8px;
   }
+
   .map figure {
-    margin: 0;
+      margin: 0;
   }
-  
+
   /* #########  16j. Roster  ######### */
 
-.lucy, .gareth {
-    padding: 20px 10px;
-}
+  .lucy,
+  .gareth {
+      padding: 20px 10px;
+  }
 
   /* ===== 17. Footer ===== */
 
@@ -1729,7 +1736,6 @@ TABLE OF CONTENTS
       }
   }
 
-
   /* ########## 19b. Media query: screen-size, max-width; 1000px ########## */
 
   @media screen and (max-width: 1000px) {
@@ -1765,10 +1771,11 @@ TABLE OF CONTENTS
           cursor: pointer;
           margin: 20px 10px 10px;
       }
-    .mobile-menu {
-        display: none;
-    }
-   
+
+      .mobile-menu {
+          display: none;
+      }
+
       .hamburger-menu:has(input:checked) {
           --dark: white;
           --background: var(--dark);
@@ -1858,10 +1865,10 @@ TABLE OF CONTENTS
           background-color: var(--dark);
       }
 
-      ul li ul.dropdown{
-        left: 120px;
-        top: 10px;
-        padding-top: 20px;
+      ul li ul.dropdown {
+          left: 120px;
+          top: 10px;
+          padding-top: 20px;
       }
 
       /* -- font-size -- */
@@ -2346,8 +2353,9 @@ TABLE OF CONTENTS
       }
 
       .card-sections {
-        height: 380px;
+          height: 380px;
       }
+
       #home .buttons a {
           margin-top: 10px;
       }
@@ -2456,13 +2464,20 @@ TABLE OF CONTENTS
 
       /* contact */
       .map img {
-        width: 100vw;
-    }
-    
-    .map {
-        height: 550px;
-    }
-  
+          width: 100vw;
+          border-radius: 0;
+      }
+
+      .map {
+          height: 550px;
+          background-color: white;
+          box-shadow: none;
+      }
+
+      #contact .our-restaurant {
+          margin-bottom: 0;
+      }
+  }
 
   /* ########## 19d. Media query: screen-size, max-width; 400px ########## */
 
@@ -2586,12 +2601,14 @@ TABLE OF CONTENTS
           padding: 20px 20px 0;
           height: 44px;
       }
+
       /* -----------  Home -------------------- */
       .card {
           height: 380px;
       }
+
       .card-sections {
-        height: 380px;
+          height: 380px;
       }
 
       /* ------------  Reservations ------------ */
@@ -2633,9 +2650,7 @@ TABLE OF CONTENTS
           margin: 70px 20px;
       }
 
-      /* .reservation-btn {
-    height: 40px;
-} */
+
       /* -------------  Menu  -------------------*/
 
       #menu .page-top-headings {
@@ -2711,6 +2726,10 @@ TABLE OF CONTENTS
           margin-top: 20px;
       }
 
+      .map {
+          height: 300px;
+      }
+
       /* -- iframes  -- */
 
       #iframes {
@@ -2722,10 +2741,6 @@ TABLE OF CONTENTS
 
       #hours .iframe-container {
           height: 1200px;
-      }
-
-      #contact .iframe-container {
-          height: 550px;
       }
 
       #reservation .google-form {
