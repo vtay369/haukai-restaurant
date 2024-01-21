@@ -1381,8 +1381,17 @@ TABLE OF CONTENTS
   /* #########  16i. Contact  ######### */
 
   .map {
-      margin-bottom: 60px;
+      padding: 40px 0 0;
       height: 600px;
+  }
+  .map img {
+    display: block;
+    margin: auto;
+    box-shadow: var(--shadow-elevation-medium);
+    border-radius: 8px;
+  }
+  .map figure {
+    margin: 0;
   }
   
   /* #########  16j. Roster  ######### */
@@ -2444,7 +2453,16 @@ TABLE OF CONTENTS
       .gift-card {
           width: 360px;
       }
-  }
+
+      /* contact */
+      .map img {
+        width: 100vw;
+    }
+    
+    .map {
+        height: 550px;
+    }
+  
 
   /* ########## 19d. Media query: screen-size, max-width; 400px ########## */
 
