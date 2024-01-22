@@ -1564,9 +1564,10 @@
 
      #menu p {
          margin: 10px 0 15px;
-         text-align: left;
      }
-
+     .menu-hours p {
+        text-align: left;
+     }
      /* ----------------------home----------------------- */
      .card-image {
          margin: 60px;
