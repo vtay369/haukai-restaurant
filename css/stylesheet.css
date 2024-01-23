@@ -1639,6 +1639,10 @@
      hr {
          margin: 30px auto;
      }
+     
+     .copywright {
+        padding-top: 40px;
+     }
  }
 
  /* ########## 19b. Media query: screen-size, max-width; 1000px ########## */
