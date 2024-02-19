@@ -1,12 +1,52 @@
- /* TABLE OF CONTENTS 1. Global Styles / Variables 2. Logo 3. Navigation 4. Dropdown Menu 5. Buttons 6. Color 7. Letter-spacing 8. Font-weight 9. Font-size 10. Text-alignment 11. Text-decorations / Transformations 12. Background-color 13. Background-images 14. Borders 15. Box-shadows 16. Website Pages 16a. Home 16b. Reservation 16c. About 16d. Hours 16e. Menu 16e-i. Appetizer 16e-ii. Main 16e-iii. Dessert 16e-iv. Beverage 16f. Maori Culture 16g. Maori Kai 16h. Voucher 16i. Contact 16j. Roster 17. Footer 18. Animations 19. Media Queries 18a. Media Query, (max-width: 1390px) 18b. Media Query, (max-width: 1000px) 18c. Media Query, (max-width: 635px) 18d. Media Query, (max-width: 400px)*/
+ /* TABLE OF CONTENTS 
+1. Global Styles / Variables 
+2. Logo 
+3. Navigation 
+4. Dropdown Menu 
+5. Buttons 
+6. Color 
+7. Letter-spacing 
+8. Font-weight 
+9. Font-size 
+10. Text-alignment 
+11. Text-decorations / Transformations 
+12. Background-color 
+13. Background-images 
+14. Borders 
+15. Box-shadows 
+16. Website Pages 
+    16a. Home 
+    16b. Reservation 
+    16c. About 
+    16d. Hours 
+    16e. Menu 
+        16e-i. Appetizer 
+        16e-ii. Main 
+        16e-iii. Dessert 
+        16e-iv. Beverage 
+    16f. Maori Culture 
+    16g. Maori Kai 
+    16h. Voucher 
+    16i. Contact 
+    16j. Staff
+    16k. Privacy policy
+17. Footer 
+18. Animations 
+19. Media Queries 
+    19a. Media Query, (max-width: 1390px) 
+    19b. Media Query, (max-width: 1000px) 
+    19c. Media Query, (max-width: 635px) 
+    19d. Media Query, (max-width: 400px)*/
+
  /*=====1. Global Styles / Variables=====*/
+
  @import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
 
  :root {
-     --dark: rgb(64, 86, 89);
+     --dark: #405659;
      --medium: rgb(89, 73, 54);
-     --light: rgb(140, 54, 41);
+     --light: #8c3629;
      --pale: #ffffff;
      --shadow-color: 0deg 0% 61%;
      --shadow-elevation-medium: 0.3px 0.5px 0.9px hsl(var(--shadow-color) / 0), 1.2px 2.4px 4px hsl(var(--shadow-color) / 0.17), 2.4px 4.8px 8px hsl(var(--shadow-color) / 0.35), 4.9px 9.9px 16.6px hsl(var(--shadow-color) / 0.52);
@@ -18,10 +58,14 @@
      scroll-behavior: smooth;
  }
 
- body {
+ body,
+ #policy header a,
+ #policy footer a {
      font-family: 'Yaldevi', Arial, sans-serif;
-     padding: 0;
-     margin: 0;
+ }
+
+ .card,
+ body {
      box-sizing: border-box;
  }
 
@@ -34,11 +78,487 @@
      font-family: 'Cinzel', serif;
  }
 
- /*====2. logo====*/
+ .native-ingredient-intro p,
+ .menu-image,
+ .gallery-container,
+ .home-image-menu,
+ .card-image img,
+ h2,
+ ul,
+ .logo figure,
+ body {
+     padding: 0;
+ }
+
+ .login h4,
+ .logo-title,
+ .contact,
+ .map figure,
+ .copywright,
+ .see-menu a,
+ .info h4,
+ .info p,
+ .footer-container p,
+ .footer-container h4,
+ .opening-hours ul li,
+ .voucher-info,
+ .native-ingredient-intro p,
+ .menu-image,
+ .gallery-container,
+ .home-image-menu,
+ .card-sections,
+ .logo-subtitle,
+ .voucher-title,
+ .voucher-subtitle,
+ .card hr,
+ .card h3,
+ h2,
+ .card-image .buttons a,
+ ul,
+ .logo figure,
+ .logo img,
+ .voucher img,
+ body {
+     margin: 0;
+ }
+
+ #privacy-policy .reserve-btn,
+ .staff-container,
+ .days,
+ .roster-week h4,
+ .days-staff h4,
+ .underline-policy,
+ .policy-container,
+ .map img,
+ #statement,
+ .maori-recipes-intro,
+ table,
+ .about {
+     margin: auto;
+ }
+
+ .menu-container-appetizers,
+ .menu-container,
+ .menu-container-desserts,
+ .menu-container-beverages,
+ .kaiwhenua-images,
+ .about,
+ .reserve {
+     margin-bottom: 70px;
+ }
+
+ .info-here::after,
+ .image-cover,
+ .maori-recipes,
+ iframe,
+ .culture-underline,
+ .appetizers,
+ .mains,
+ .desserts,
+ .beverages,
+ .gallery-image,
+ .google-form,
+ .card-image img {
+     width: 100%;
+ }
+
+ hr,
+ .staff-container {
+     width: 90%;
+ }
+
+ table,
+ #iframes {
+     width: 80%;
+ }
+
+ .about,
+ .policy-container {
+     width: 60%;
+ }
+
+ #statement,
+ .reservation-image,
+ .table,
+ .card-sections,
+ .card,
+ .voucher-info,
+ .card-image .buttons a {
+     width: 50%;
+ }
+
+ .cover,
+ #kai .recipes-squares a,
+ .recipes-squares {
+     width: 330px;
+ }
+
+ .card-image .buttons a,
+ .buttons a,
+ ul li a {
+     height: 44px;
+ }
+
+ #kai .recipes-squares a,
+ .recipes-squares {
+     height: 330px;
+ }
+
+ .gift-card,
+ .gift {
+     height: 228px;
+ }
+
+ .image-cover,
+ .our-story-image,
+ .restaurant-image,
+ .book,
+ .landscape {
+     height: 550px;
+ }
+
+ .card-image img,
+ .info-here::after,
+ .appetizers,
+ .mains,
+ .desserts,
+ .beverages,
+ .gallery-image {
+     height: 100%;
+ }
+
+ #staff ul,
+ .opening-hours ul li,
+ .hours,
+ .map img,
+ #kai .recipes-squares a,
+ #kai ul li,
+ .native-ingredients,
+ .gallery-image,
+ ul li a,
+ ul li:hover ul.dropdown,
+ ul li ul.dropdown li {
+     display: block;
+ }
+
+ ul li ul.dropdown,
+ #home-nav,
+ .hamburger-menu {
+     display: none;
+ }
+
+ ul li {
+     display: inline-block;
+ }
+
+ .login,
+ .info-here,
+ .opening-hours ul li,
+ .card-culture-container,
+ .iframe-container,
+ .reservation-image,
+ #reservation .container,
+ .our-story-image,
+ .restaurant-image,
+ .book,
+ .landscape,
+ .recipes-squares,
+ ul li {
+     position: relative;
+ }
+
+ .image-cover,
+ .info-here::after,
+ .image-cover,
+ .cover,
+ #kai .recipes-squares a,
+ #iframes,
+ ul li ul.dropdown {
+     position: absolute;
+ }
+
+ .info-here::after,
+ .google-form {
+     top: 0;
+ }
+
+ .login,
+ .info-here::after,
+ #kai .recipes-squares a,
+ #iframes,
+ .iframe-container,
+ .reservation-image,
+ .our-story-image,
+ .restaurant-image,
+ .book,
+ .landscape {
+     z-index: -1;
+ }
+
+ .appetizers,
+ .mains,
+ .desserts,
+ .beverages,
+ ul li ul.dropdown {
+     z-index: 2;
+ }
+
+ .days-staff,
+ #staff .daily-staff,
+ #staff .days,
+ .weeks,
+ .days,
+ .staff,
+ .staff-container,
+ .voucher-content,
+ .audio-info,
+ .audio,
+ .footer-container,
+ .gift-card,
+ .recipes,
+ .native-ingredient-intro,
+ .card-culture-container,
+ .appetizers,
+ .mains,
+ .desserts,
+ .beverages,
+ .reserve-container,
+ .info,
+ .card-image,
+ .card,
+ .buttons,
+ ul,
+ .nav-container,
  #header {
      display: flex;
+ }
+
+ .days-staff,
+ .weeks,
+ .staff,
+ .audio-info,
+ .footer-container,
+ .recipes {
+     flex-wrap: wrap;
+ }
+
+ .days-staff,
+ .weeks,
+ .staff,
+ .card-image,
+ .footer-container,
+ .recipes {
+     flex-direction: row;
+ }
+
+ .staff-container,
+ #staff .daily-staff,
+ .audio-info,
+ .card-culture-container,
+ .appetizers,
+ .mains,
+ .desserts,
+ .beverages,
+ .card {
+     flex-direction: column;
+ }
+
+ .audio,
+ .voucher-content,
+ .recipes,
+ .reserve-container,
+ .card {
+     justify-content: center;
+ }
+
+ .days,
+ .weeks,
+ .staff-container,
+ .staff,
+ .footer-container,
+ .gift-card,
+ .appetizers,
+ .mains,
+ .desserts,
+ .beverages,
+ .info,
+ .buttons,
+ #header {
      justify-content: space-between;
  }
+
+ .nav-container {
+     justify-content: flex-end;
+ }
+
+ .reserve,
+ .buttons,
+ .audio-info,
+ .audio,
+ .gift-card,
+ .introduced,
+ #header {
+     align-items: center;
+ }
+
+ .introduced,
+ .nz-ingredients-container,
+ .culture-container,
+ .menu-container-appetizers,
+ .menu-container,
+ .menu-container-desserts,
+ .menu-container-beverages,
+ .kaiwhenua-images {
+     display: grid;
+ }
+
+ .days-staff,
+ .culture-container,
+ .card {
+     gap: 30px;
+ }
+
+ .weeks,
+ .staff-container {
+     gap: 40px;
+ }
+
+ .coffee,
+ .lamb,
+ .salmon,
+ .fish {
+     grid-column: 6 / 9;
+ }
+
+ .salmon,
+ .coffee,
+ .wine-glasses {
+     grid-row: 1 / 7;
+ }
+
+ .beer,
+ .banoffee,
+ .pavlova,
+ .pork,
+ .seafood {
+     grid-column: 5 / 9;
+ }
+
+ .seafood,
+ .wine-with-meal,
+ .beer {
+     grid-row: 7 / 11;
+ }
+
+ .wine-glasses,
+ .venison,
+ .snapper {
+     grid-column: 1 / 6;
+ }
+
+ .snapper,
+ .pavlova {
+     grid-row: 1 / 6;
+ }
+
+ .wine-with-meal,
+ .pudding,
+ .icecream,
+ .scallops,
+ .bread {
+     grid-column: 1 / 5;
+ }
+
+ .bread,
+ .banoffee {
+     grid-row: 6 / 11;
+ }
+
+ .beverages,
+ .desserts,
+ .mains,
+ .appetizers {
+     grid-column: 3 / 7;
+ }
+
+ .desserts,
+ .appetizers {
+     grid-row: 3 / 9;
+ }
+
+ .kereru,
+ .scallops,
+ .pork,
+ .icecream {
+     grid-row: 1 / 5;
+ }
+
+ .chowder,
+ .juice,
+ .fern {
+     grid-column: 1 / 4;
+ }
+
+ .juice,
+ .drinks {
+     grid-row: 11 / 16;
+ }
+
+ .kereru,
+ .nz-ingredients-container>.land {
+     grid-column: 1 / 3;
+ }
+
+ .introduced p,
+ .introduced h2,
+ .nz-ingredients-container>.sea,
+ .nz-ingredients-container>.land {
+     grid-row: 1 / 2;
+ }
+
+ .nz-ingredients-container>.sea,
+ .huhu {
+     grid-column: 3 / 5;
+ }
+
+ .forest {
+     grid-column: 1 / 2;
+ }
+
+ .animal-food,
+ .forest {
+     grid-row: 2 / 5;
+ }
+
+ .animal-food {
+     grid-column: 2 / 3;
+ }
+
+ .horopito,
+ .puha {
+     grid-row: 6 / 7;
+ }
+
+ .puha,
+ .kina {
+     grid-column: 7 / 8;
+ }
+
+ .paua,
+ .huhu {
+     grid-row: 1 / 3;
+ }
+
+ .appetizers,
+ .mains,
+ .desserts,
+ .beverages,
+ .gallery-image,
+ .card-image img {
+     object-fit: cover;
+ }
+
+ /*====2. logo====*/
 
  .logo {
      padding: 5px 30px;
@@ -46,112 +566,64 @@
 
  .logo img,
  .voucher img {
-     margin: 0;
      width: 100px;
      height: 5px;
      transform: translate(0, -10px);
  }
 
- .logo figure {
-     padding: 0;
-     margin: 0;
- }
-
  /*=====3. navigation=====*/
- .hamburger-menu {
-     display: none;
- }
 
  .nav-container {
-     display: flex;
-     justify-content: end;
      padding: 0 40px;
      align-items: flex-end;
-     height: 80px;
- }
-
- #home-nav {
-     display: none;
  }
 
  ul {
-     padding: 0;
-     margin: 0;
-     display: flex;
      list-style-type: none;
      gap: 20px;
  }
 
- ul li {
-     display: inline-block;
-     position: relative;
- }
-
- .nav-container {
-     transform: translate(0, 10px);
- }
-
- .current a {
-     color: var(--light);
+ .sidebar {
+     max-height: 80px;
  }
 
  /*====4. dropdown menu====*/
- */ .icon {
+
+ .icon {
      padding-right: 10px;
      transform: translate(-10px, -12px);
  }
 
- ul li ul.dropdown li {
-     display: block;
- }
-
  ul li ul.dropdown {
-     width: 120px;
-     position: absolute;
-     z-index: 2;
-     display: none;
+     width: 130px;
  }
 
- ul li:hover ul.dropdown {
-     display: block;
+ ul li a {
+     padding: 20px 20px 0 20px;
  }
 
  /*=====5. Buttons=====*/
- .buttons {
-     display: flex;
-     justify-content: space-between;
-     margin: 30px 0;
-     align-items: center;
- }
 
  .buttons a {
      margin: 10px 50px;
-     background-color: var(--light);
-     height: 44px;
      width: 20%;
-     border: none;
      padding: 20px 0 0 0;
  }
 
- .card-image .buttons a {
-     height: 44px;
-     margin: 0;
-     width: 50%;
- }
-
- .buttons>.reservation-btn {
-     margin: auto;
-     padding: 40px 60px 40px 40px;
-     color: var(--light);
+ .home-book-table a {
+     margin: 10px auto 25px;
  }
 
  .reserve {
      padding-bottom: 10px;
-     align-items: center;
-     margin-bottom: 70px;
  }
 
  /*=====6. Font Colours=====*/
+
+ .roster-week h4,
+ .days-staff h4,
+ .privacy-answers h4,
+ .nz-ingredients-container h4,
  ul li a,
  .see-menu a:hover,
  .info h4,
@@ -165,6 +637,8 @@
      color: var(--dark);
  }
 
+ #privacy-policy .buttons a:active,
+ .buttons a:active,
  .card p,
  #menu p,
  td,
@@ -177,13 +651,18 @@
      color: var(--medium);
  }
 
+ .current a,
  .price,
  .buttons .reservation-btn a,
- .see-menu,
- ul li a:active {
+ .see-menu {
      color: var(--light);
  }
 
+ #privacy-policy .buttons a,
+ .copywright a,
+ #policy .copywright a,
+ .contact-details,
+ ul li .animate-size:focus,
  footer,
  a,
  .maori-recipes h2,
@@ -193,11 +672,14 @@
      color: white;
  }
 
- .staff a:hover {
+ .staff a:hover,
+ .see-menu:hover {
      color: rgb(162, 193, 233);
  }
 
  /*=====7. Letter-spacing=====*/
+
+ .contact-details,
  .voucher-subtitle,
  a,
  .footer-container a,
@@ -215,6 +697,12 @@
      letter-spacing: 2px;
  }
 
+ .about p {
+     letter-spacing: 1.5px;
+ }
+
+ .copywright a,
+ #policy .copywright a,
  .see-menu a,
  .info h4,
  .info p,
@@ -228,7 +716,13 @@
      letter-spacing: 1px;
  }
 
+ #privacy-policy p,
+ #privacy-policy li {
+     letter-spacing: 0;
+ }
+
  /*=====8. Font-weight=====*/
+
  .buttons .reservation-btn a {
      font-weight: 800;
  }
@@ -246,11 +740,18 @@
      font-weight: 600;
  }
 
+ #privacy-policy p,
+ #privacy-policy li,
  p,
  td,
  h1,
  h2 {
      font-weight: 500;
+ }
+
+ .copywright a,
+ #policy .copywright a {
+     font-weight: 400;
  }
 
  .footer-container p,
@@ -261,6 +762,7 @@
  }
 
  /*=====9. Font-sizes=====*/
+
  h1 {
      font-size: 3em;
  }
@@ -282,7 +784,6 @@
  .logo-title,
  .contact {
      font-size: 1.5em;
-     margin: 0;
  }
 
  .foraged-forest h3,
@@ -298,6 +799,7 @@
      font-size: 1.3em;
  }
 
+ #privacy-policy h3,
  a,
  .price,
  #statement {
@@ -316,6 +818,12 @@
      font-size: 1.1em;
  }
 
+ #privacy-policy .buttons a,
+ .copywright a,
+ #policy .copywright a,
+ #privacy-policy p,
+ #privacy-policy li,
+ .roster-week p,
  .voucher-subtitle,
  .see-menu,
  .gift p,
@@ -331,15 +839,20 @@
  .footer-container h4,
  .opening-hours ul li {
      padding: 3px;
-     margin: 0;
      font-size: 0.9em;
  }
 
+ .audio a,
  .logo-subtitle {
      font-size: 0.8em;
  }
 
  /*=====10. Text-alignment=====*/
+
+ .roster-week h4,
+ .days-staff h4,
+ .contact-details,
+ .staff-working h3,
  .our-restaurant,
  .home-book-table,
  .page-top-headings,
@@ -369,13 +882,23 @@
      text-align: left;
  }
 
- ul li a {
-     display: block;
-     height: 44px;
-     padding: 0 20px;
+ .maori-recipes p,
+ .card p {
+     line-height: 1.5;
+ }
+
+ .voucher-info,
+ #statement {
+     line-height: 1.7;
+ }
+
+ #privacy-policy p,
+ #privacy-policy li {
+     line-height: 2.5;
  }
 
  /*=====11. text-decorations / transformations=====*/
+
  h1,
  h2,
  h3,
@@ -398,32 +921,33 @@
  }
 
  .see-menu {
-     text-decoration: none;
-     padding: 5px;
+     padding-left: 2px;
  }
 
+ .copywright a,
+ #policy .copywright a,
+ #privacy-policy h3,
  #statement {
      text-transform: capitalize;
  }
 
- /* --- margins and padding --- */
- h2 {
-     padding: 0;
-     margin: 0;
+ #policy a {
+     text-decoration: none;
  }
+
+ .copywright a,
+ #policy .copywright a {
+     text-decoration: underline;
+ }
+
+ /* --- margins and padding --- */
 
  th {
      padding-bottom: 15px;
  }
 
- .card h3 {
-     margin: 0;
- }
-
  .card hr {
-     margin: 0;
      width: 120px;
-     border: 1px solid lightgrey;
  }
 
  .footer-container h4 {
@@ -439,23 +963,41 @@
      padding: 20px 0;
  }
 
- .voucher-title,
- .voucher-subtitle {
-     margin: 0;
+ #kai .recipes-squares a,
+ .contact-details {
+     padding-top: 10px;
  }
 
- .logo-subtitle {
-     margin: 0;
+ .days-staff,
+ .staff-working h3 {
+     margin: 0 10px;
+ }
+
+ #staff iframe,
+ .buttons {
+     margin: 30px 0;
  }
 
  /*=====12. background colours=====*/
+
+ .appetizers,
+ .mains,
+ .desserts,
+ .beverages,
+ .buttons a:active,
  ul,
- ul li ul.dropdown,
  .buttons>.reservation-btn,
  .see-menu {
      background-color: white;
  }
 
+ .contact-details,
+ .our-story-image,
+ .restaurant-image,
+ .book,
+ .landscape,
+ .recipes-squares,
+ .info-here::after,
  footer,
  .foraged-forest,
  .animal-foods,
@@ -466,34 +1008,30 @@
      background-color: var(--dark);
  }
 
+ .info-here,
+ .buttons a,
+ .animate-size:active {
+     background-color: var(--light);
+ }
+
  .google-form,
  .iframe-container {
      background-color: rgb(89, 73, 54, 0.3);
  }
 
  .cover {
-     background-color: rgb(225, 225, 225, 0.8);
+     background-color: hsl(0, 0%, 93%, 0.7);
  }
 
  /*=====13. background css images=====*/
+
  .our-story-image,
  .restaurant-image,
  .book,
  .landscape,
  .recipes-squares {
-     background-color: var(--dark);
      background-repeat: no-repeat;
      background-size: cover;
-     position: relative;
-     box-shadow: 2px 2px 2px 2px gray;
- }
-
- .our-story-image,
- .restaurant-image,
- .book,
- .landscape {
-     z-index: -1;
-     height: 550px;
  }
 
  .restaurant-image {
@@ -557,6 +1095,8 @@
  }
 
  /*=====14. Borders=====*/
+
+ .card hr,
  .appetizers,
  .mains,
  .desserts,
@@ -564,6 +1104,19 @@
      border: 1px solid lightgrey;
  }
 
+ .staff-working,
+ .staff {
+     border-top: 8px solid var(--light);
+ }
+
+ .animate-size:active,
+ ul li ul.dropdown,
+ .buttons a {
+     border-radius: 4px;
+ }
+
+ .map img,
+ .card-culture-container,
  .appetizers,
  .mains,
  .desserts,
@@ -575,31 +1128,47 @@
      border-radius: 8px;
  }
 
- .buttons a {
-     border-radius: 4px;
- }
-
+ .staff-working,
+ .staff,
  iframe,
  .card-culture-container img,
  .odd-image {
      border-radius: 8px 8px 0 0;
  }
 
- .odd-image {
-     border-radius: 0 8px 8px 0;
- }
-
  .even-image {
      border-radius: 8px 0 0 8px;
  }
 
+ .gift,
+ .odd-image {
+     border-radius: 0 8px 8px 0;
+ }
+
+ .info-here::after,
+ .info-here {
+     border-radius: 50%;
+ }
+
+ .buttons a,
+ .final-cards,
+ iframe {
+     border: none;
+ }
+
  hr {
-     width: 90%;
      border: 1px solid var(--light);
      margin: 60px auto 40px;
  }
 
  /*=====15. Box-shadows=====*/
+
+ .staff,
+ .staff-working,
+ .map img,
+ .recipes-squares,
+ .restaurant-image,
+ .landscape,
  .kaiwhenua-images,
  .menu-container-appetizers,
  .menu-container,
@@ -618,81 +1187,44 @@
      box-shadow: var(--shadow-elevation-medium);
  }
 
+
  /*=====16. Website Pages=====*/
+
  /* ######### 16a. Home ######### */
+
  .our-restaurant {
-     margin: 50px 50px;
+     margin: 70px 10px 58px;
  }
 
  .card {
-     display: flex;
-     flex-direction: column;
-     box-sizing: border-box;
      padding: 80px;
-     width: 50%;
-     gap: 30px;
-     justify-content: center;
  }
 
  .card-image {
-     display: flex;
-     flex-direction: row;
      margin: 60px 120px;
-     max-height: 536px;
- }
-
- .card-sections {
-     margin: 0;
-     max-height: 536px;
-     width: 50%;
- }
-
- .card-image img {
-     width: 100%;
-     height: 536px;
-     object-fit: cover;
-     padding: 0;
- }
-
- .home-image-menu {
-     margin: 0;
-     padding: 0;
  }
 
  .card p {
      margin: 3px 0;
-     line-height: 1.5;
  }
 
  /* ######### 16b. About ######### */
+
  #our-story-article .our-restaurant {
      margin-top: 100px;
  }
 
  .about {
-     width: 60%;
-     margin: auto;
      line-height: 2;
-     margin-bottom: 70px;
  }
 
  .about p {
-     letter-spacing: 1.5px;
      padding: 10px 0;
  }
 
  /* ######### 16c. Reservations ######### */
- #reservation .container {
-     position: relative;
- }
-
- #reservation .page-top-headings {
-     margin-bottom: 120px;
- }
 
  .info {
-     display: flex;
-     justify-content: space-between;
      align-items: start;
      margin: 0 50px 5px;
  }
@@ -700,74 +1232,51 @@
  .google-form {
      margin: 20px 0 60px 0;
      padding: 40px 25px;
-     top: 0;
      right: 40px;
-     width: 100%;
      height: 950px;
      border-radius: 0;
- }
-
- .reserve-container {
-     display: flex;
-     justify-content: center;
- }
-
- .table {
-     width: 50%;
  }
 
  .reservation-image {
      margin-top: 25px;
      filter: sepia(0.5);
      min-height: 80vh;
-     width: 50%;
-     position: relative;
-     z-index: -1;
- }
-
- .see-menu {
-     border: none;
-     transform: translate(-4px);
  }
 
  /* ######### 16d. Hours ######### */
+
  .iframe-container {
      height: 1300px;
-     position: relative;
      margin-bottom: 60px;
-     z-index: -1;
  }
 
  #iframes {
-     width: 80%;
-     position: absolute;
      top: 5%;
      left: 10%;
-     z-index: -1;
  }
 
  /* ######### 16e. Menu ######### */
+
  .page-top-headings {
      margin: 70px 50px 50px 50px;
  }
 
  /* --- 16e-i. Appetizer ---*/
- .gallery-container {
-     margin: 0;
-     padding: 0;
- }
 
  .menu-container-appetizers,
  .menu-container,
  .menu-container-desserts,
  .menu-container-beverages,
  .kaiwhenua-images {
-     display: grid;
      grid-template-columns: repeat(8, 1fr);
      grid-template-rows: repeat(10, 7vw);
-     gap: 15px;
      padding: 7.5px 0;
-     margin-bottom: 70px;
+     gap: 15px;
+ }
+
+ #staff .daily-staff,
+ .kaiwhenua-images {
+     gap: 5px;
  }
 
  .menu-container-appetizers {
@@ -775,172 +1284,65 @@
      padding-top: 15px;
  }
 
- .gallery-image {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     display: block;
- }
-
- .menu-image {
-     padding: 0;
-     margin: 0;
- }
-
- .salmon {
-     grid-column: 6 / 9;
-     grid-row: 1 / 7;
- }
-
  .salmon img,
  .snapper img {
      transform: scaleX(-1);
- }
-
- .seafood {
-     grid-column: 5 / 9;
-     grid-row: 7 / 11;
- }
-
- .snapper {
-     grid-column: 1 / 6;
-     grid-row: 1 / 6;
- }
-
- .bread {
-     grid-column: 1 / 5;
-     grid-row: 6 / 11;
  }
 
  .appetizers,
  .mains,
  .desserts,
  .beverages {
-     z-index: 2;
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     background-color: white;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
      padding: 10px 40px;
  }
 
- .appetizers {
-     grid-column: 3 / 7;
-     grid-row: 3 / 9;
- }
-
  /* --- 16e-ii. Main Menu --- */
+
  .menu-container {
      grid-template-rows: repeat(12, 7vw);
  }
 
  .fish {
-     grid-column: 6 / 9;
      grid-row: 9 / 13;
  }
 
- .scallops {
-     grid-column: 1 / 5;
-     grid-row: 1 / 5;
- }
-
  .chowder {
-     grid-column: 1 /4;
      grid-row: 5 / 8;
  }
 
  .lamb {
-     grid-column: 6/9;
      grid-row: 5/9;
  }
 
- .pork {
-     grid-column: 5/9;
-     grid-row: 1/5;
- }
-
  .venison {
-     grid-column: 1/6;
      grid-row: 8/13;
  }
 
  .mains {
-     grid-column: 3 / 7;
      grid-row: 3 / 11;
  }
 
  /* --- 16e-iii. Desserts --- */
- .icecream {
-     grid-column: 1 / 5;
-     grid-row: 1 / 5;
- }
 
  .pudding {
-     grid-column: 1 / 5;
      grid-row: 5 / 11;
  }
 
- .pavlova {
-     grid-column: 5 / 9;
-     grid-row: 1 / 6;
- }
-
- .banoffee {
-     grid-column: 5 / 9;
-     grid-row: 6 / 11;
- }
-
- .desserts {
-     grid-column: 3 / 7;
-     grid-row: 3 / 9;
- }
-
  /* --- 16e-iv. Beverages --- */
+
  .menu-container-beverages {
      grid-template-rows: repeat(15, 7vw);
  }
 
- .wine-glasses {
-     grid-column: 1 / 6;
-     grid-row: 1 / 7;
- }
-
- .coffee {
-     grid-column: 6 / 9;
-     grid-row: 1 / 7;
- }
-
- .wine-with-meal {
-     grid-column: 1 / 5;
-     grid-row: 7 / 11;
- }
-
- .beer {
-     grid-column: 5 / 9;
-     grid-row: 7 / 11;
- }
-
  .drinks {
      grid-column: 4 / 9;
-     grid-row: 11 / 16;
- }
-
- .juice {
-     grid-column: 1 / 4;
-     grid-row: 11 / 16;
  }
 
  .beverages {
-     grid-column: 3 / 7;
-     grid-row: 3 / 14;
+     grid-row: 2 / 15;
  }
 
  table {
-     width: 80%;
-     margin: auto;
      text-align: start;
  }
 
@@ -949,10 +1351,6 @@
  }
 
  /* ######### 16f. Maori Culture ######### */
- #maori-culture>.our-restaurant,
- #kai>.our-restaurant {
-     margin-bottom: 20px;
- }
 
  #maori-culture hr,
  #kai hr {
@@ -964,10 +1362,8 @@
  }
 
  .culture-container {
-     display: grid;
      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
      grid-auto-rows: 7rem;
-     gap: 30px;
      max-width: 1500px;
      margin: 0 auto;
  }
@@ -979,14 +1375,6 @@
 
  .culture-underline {
      margin: 40px 0;
-     width: 100%;
- }
-
- .card-culture-container {
-     display: flex;
-     flex-direction: column;
-     position: relative;
-     border-radius: 8px;
  }
 
  .heading-culture-title {
@@ -995,11 +1383,6 @@
 
  .heading-culture-type {
      margin: 15px 0 15px 25px;
- }
-
- iframe {
-     width: 100%;
-     border: none;
  }
 
  .shortest {
@@ -1030,13 +1413,9 @@
      grid-row: span 10;
  }
 
- .final-cards {
-     border: none;
- }
-
  /* ######### 16g. Maori Kai ######### */
+
  .nz-ingredients-container {
-     display: grid;
      grid-template-columns: repeat(4, 1fr);
      grid-template-rows: 70px 1fr;
      margin: 0 0px 50px 10%;
@@ -1044,64 +1423,17 @@
 
  .nz-ingredients-container h4 {
      margin: 0 0 10px;
-     color: var(--dark);
- }
-
- .native-ingredients {
-     display: block;
- }
-
- .nz-ingredients-container>.land {
-     grid-column: 1 / 3;
-     grid-row: 1/2;
- }
-
- .nz-ingredients-container>.sea {
-     grid-column: 3 / 5;
-     grid-row: 1/2;
- }
-
- .forest {
-     grid-column: 1 / 2;
-     grid-row: 2/5;
- }
-
- .animal-food {
-     grid-column: 2 / 3;
-     grid-row: 2/5;
- }
-
- .animal-food {
-     grid-column: 2 / 3;
-     grid-row: 2/5;
- }
-
- #kai ul li {
-     display: block;
  }
 
  .kaiwhenua-images {
      grid-template-rows: 7vw 7vw 7vw 7vw 7vw;
-     gap: 5px;
  }
 
  .fern {
-     grid-column: 1 / 3;
-     grid-row: 4 / 7;
- }
-
- .puha {
-     grid-column: 1 / 2;
-     grid-row: 1 / 4;
- }
-
- .horopito {
-     grid-column: 2 / 3;
-     grid-row: 1 / 4;
+     grid-row: 5 / 7;
  }
 
  .native-ingredient-intro {
-     display: flex;
      gap: 130px;
      width: 76%;
      margin: 80px auto 40px;
@@ -1111,28 +1443,10 @@
      padding-left: 60px;
      margin-left: 15px;
      transform: translate(0, -20px);
-     padding: 0;
-     margin: 0;
- }
-
- .fern {
-     grid-column: 1 / 4;
-     grid-row: 5 / 7;
- }
-
- .puha {
-     grid-column: 7 / 8;
-     grid-row: 6 / 7;
  }
 
  .horopito {
      grid-column: 6 / 7;
-     grid-row: 6 / 7;
- }
-
- .huhu {
-     grid-column: 3 / 5;
-     grid-row: 1/3;
  }
 
  .moa {
@@ -1140,19 +1454,13 @@
      grid-row: 3 / 5;
  }
 
- .kereru {
-     grid-column: 1 / 3;
-     grid-row: 1 / 5;
- }
-
  .muttonbird {
      grid-column: 4 / 6;
-     grid-row: 6/ 7;
+     grid-row: 6 / 7;
  }
 
  .paua {
      grid-column: 5 / 7;
-     grid-row: 1 / 3;
  }
 
  .whitebait {
@@ -1166,7 +1474,6 @@
  }
 
  .kina {
-     grid-column: 7 / 8;
      grid-row: 4 / 6;
  }
 
@@ -1176,16 +1483,13 @@
  }
 
  .introduced {
-     display: grid;
      grid-template-columns: 11% 1fr 1fr 1fr 11%;
      grid-template-rows: 1fr;
-     align-items: center;
      margin: 80px 0;
  }
 
  .introduced h2 {
      grid-column: 4 / 5;
-     grid-row: 1 / 2;
      text-align: end;
      padding-left: 30px;
  }
@@ -1193,19 +1497,10 @@
  .introduced p {
      padding-right: 60px;
      margin-right: 15px;
-     grid-column: 2/4;
-     grid-row: 1/2;
- }
-
- .maori-recipes {
-     width: 100%;
+     grid-column: 2 / 4;
  }
 
  .recipes {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: center;
      padding: 60px;
      gap: 80px;
      margin-bottom: 80px;
@@ -1215,56 +1510,32 @@
      padding: 110px 0 30px 0;
  }
 
- .maori-recipes p {
-     line-height: 1.5;
- }
-
  .maori-recipes-intro {
      width: 78%;
-     margin: auto;
  }
 
  .recipes-squares {
-     width: 330px;
-     height: 330px;
      filter: sepia(0.6);
  }
 
  #kai .recipes-squares a {
-     display: block;
-     width: 330px;
-     height: 330px;
-     position: absolute;
      color: black;
-     z-index: -1;
-     padding-top: 10px;
  }
 
  .cover {
-     position: absolute;
-     width: 330px;
-     height: 40px;
+     height: 50px;
      z-index: 99;
      top: 30px;
+     padding-top: 8px;
  }
 
  /* ######### 16h. Voucher ######### */
- #statement {
-     width: 50%;
-     margin: auto;
-     line-height: 1.7;
- }
 
  .image-cover {
      background-color: rgb(0, 0, 0, 0.4);
-     width: 100%;
-     height: 550px;
-     position: absolute;
  }
 
  .voucher-content {
-     display: flex;
-     justify-content: center;
      gap: 100px;
      margin: 100px;
  }
@@ -1273,29 +1544,16 @@
      margin: 0 20px 0 20px;
  }
 
- .voucher-info {
-     width: 50%;
-     line-height: 1.7;
-     margin: 0;
- }
-
  .gift-card {
      width: 400px;
-     height: 228px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
  }
 
  .gift {
-     height: 228px;
      width: 236.3px;
-     border-radius: 0 8px 8px 0;
  }
 
  .gift p {
-     margin: 10px;
-     margin-top: 40px;
+     margin: 40px 10px 10px;
  }
 
  .gift-heading {
@@ -1303,54 +1561,88 @@
  }
 
  /* ######### 16i. Contact ######### */
+
  .map {
      padding: 40px 0 0;
      height: 600px;
  }
 
- .map img {
-     display: block;
-     margin: auto;
-     box-shadow: var(--shadow-elevation-medium);
-     border-radius: 8px;
+ /* ######### 16j. Staff ######### */
+
+ .roster-week {
+     min-width: 220px;
+     padding: 15px 50px;
  }
 
- .map figure {
-     margin: 0;
+
+ #staff h4 {
+     animation: none !important;
  }
 
- /* ######### 16j. Roster ######### */
- .lucy,
- .gareth {
-     padding: 20px 10px;
+ .roster-week h4,
+ .days-staff h4 {
+     margin-bottom: 10px;
  }
 
+ .days {
+     padding: 2px 0;
+ }
+
+ .contact-details {
+     flex-grow: 1;
+     min-width: 250px;
+ }
+
+ .staff-working h3 {
+     padding: 0 0 25px 0;
+ }
+
+ .staff-working {
+     max-width: 90%;
+     margin: 40px auto;
+     padding: 50px 0;
+ }
+
+ .days-staff {
+     justify-content: space-evenly;
+ }
+
+ /* ######### 16k. Privacy policy ######### */
+
+ .underline-policy {
+     margin-top: 40px;
+ }
+
+ .privacy-answers {
+     margin: 40px 0;
+ }
+
+ #privacy-policy .buttons a {
+    padding: 10px 0 10px 0;
+ }
  /*=====17. Footer=====*/
  footer {
      padding: 40px;
  }
 
- .footer-container {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: space-between;
+ #staff iframe {
+     height: 1200px;
  }
 
  .reservation-footer {
      height: 40px;
  }
 
- .hours {
-     display: block;
+ .copy {
+     padding: 40px 0 10px;
  }
 
- .opening-hours ul li {
-     display: block;
-     position: relative;
+ .hours {
+     padding-left: 0;
  }
 
  /*=====18. Animations=====*/
+
  /*h1 heading colour change*/
  @keyframes color-change-h1 {
      from {
@@ -1412,12 +1704,11 @@
 
  .our-restaurant h1 {
      animation-name: color-change-h1;
-     animation-duration: 1s;
  }
 
  .reservation-btn:hover,
- .buttons button:hover,
- ul li a:hover,
+ a:hover,
+ .animate-size:hover,
  .logo:hover,
  .recipes-squares:hover,
  .gift-card:hover,
@@ -1432,22 +1723,20 @@
 
  #statement {
      animation-name: color-change-h3;
-     animation-duration: 1s;
  }
 
  .image-cover {
      animation-name: slide;
-     animation-duration: 1s;
  }
 
+ .animate-size:hover,
+ .staff h4:hover,
  .reservation-btn:hover,
- .buttons button:hover,
- ul li a:hover,
+ .buttons a:hover,
  .logo:hover,
  .recipes-squares:hover,
  .gift-card:hover {
      animation-name: scale;
-     animation-duration: 1s;
  }
 
  .info-here::after {
@@ -1457,56 +1746,43 @@
      animation-timing-function: cubic-bezier(0.9, 0.7, 0.5, 0.9);
  }
 
+ .animate-size:hover,
+ .staff h4:hover,
+ .reservation-btn:hover,
+ .buttons a:hover,
+ .logo:hover,
+ .recipes-squares:hover,
+ .gift-card:hover,
+ .image-cover,
+ #statement,
+ .our-restaurant h1 {
+     animation-duration: 1s;
+ }
+
  .info-here {
      width: 15px;
      height: 15px;
-     background-color: var(--light);
-     border-radius: 50%;
-     position: relative;
- }
-
- .audio {
-     display: flex;
-     justify-content: center;
-     align-items: center;
  }
 
  .audio a {
      color: blue;
      text-decoration: underline;
      text-transform: capitalize;
-     font-size: 0.8em;
-     height: 44px;
  }
 
  .audio-info {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     align-items: center;
      gap: 10px;
  }
 
- .info-here-container {
-     width: 50%;
-     justify-self: cent;
- }
-
- /* https://web.dev/learn/css/animations */
  .info-here::after {
      content: '';
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     top: 0;
      left: 0px;
-     background-color: var(--dark);
-     border-radius: 50%;
-     z-index: -1;
  }
 
  /*=====19. Media Queries=====*/
+
  /* ########## 19a. Media query: screen-size, max-width; 1390px ########## */
+
  @media screen and (max-width: 1390px) {
      .navbar a {
          font-size: 0.9em;
@@ -1516,14 +1792,13 @@
          gap: 5px;
      }
 
-     .nav-container {
-         padding: 0;
-     }
+     ul li a {
+        padding: 20px 15px 0 15px;
+    }
 
-     /* --- text sizes --- */
-     h1 {
-         /* margin-top: 0; */
-         font-size: 2.4em;
+     .nav-container,
+     .beverages {
+         padding: 0;
      }
 
      .reserve .book-now {
@@ -1557,7 +1832,6 @@
          font-size: 1em;
      }
 
-     /* -- text margin-- */
      th {
          margin: 0;
      }
@@ -1565,10 +1839,11 @@
      #menu p {
          margin: 10px 0 15px;
      }
+
      .menu-hours p {
-        text-align: left;
+         text-align: left;
      }
-     /* ----------------------home----------------------- */
+
      .card-image {
          margin: 60px;
      }
@@ -1577,88 +1852,199 @@
          padding: 60px;
      }
 
-     /* ----------------------Reserve----------------------- */
      .google-form {
          margin: 20px 0 30px;
          padding: 20px 0;
      }
 
-     /* ----------------------menu----------------------- */
-     .mains {
-         grid-column: 3 / 7;
-         grid-row: 2 / 12;
+     .mains,
+     .appetizers,
+     .desserts,
+     .beverages {
          transform: translate(0);
      }
 
-     .appetizers {
+     .desserts,
+     .appetizers,
+     .mains {
          grid-column: 3 / 7;
+     }
+
+     .mains {
+         grid-row: 2 / 12;
+     }
+
+     .desserts,
+     .appetizers {
          grid-row: 2 / 10;
-         transform: translate(0);
      }
 
      .beverages {
          grid-column: 3 / 8;
          grid-row: 2 / 15;
-         transform: translate(0);
-         padding: 0;
          width: 90%;
      }
 
-     .desserts {
-         grid-column: 3 / 7;
-         grid-row: 2 / 10;
-         transform: translate(0);
-     }
-
-     /* -------------------- reserve--------------------- */
      .info {
          gap: 20px;
      }
 
-     /* ----Maori culture --- */
      .culture-container {
          margin: 0 20px;
      }
 
-     /* -------------------- kai------------------------- */
      .native-ingredient-intro {
          gap: 30px
-     }
-
-     .our-restaurant,
-     #reservation .page-top-headings,
-     #reservation .page-top-headings,
-     #our-story-article .our-restaurant {
-         margin: 60px 10px;
-     }
-
-     h1 {
-         margin-bottom: 15px;
      }
 
      hr {
          margin: 30px auto;
      }
-     
-     .copywright {
-        padding-top: 40px;
+
+     .policy-container {
+         width: 70%;
      }
  }
 
  /* ########## 19b. Media query: screen-size, max-width; 1000px ########## */
- @media screen and (max-width: 1000px) {
-     #header {
-         height: 110px;
-         position: relative;
+ 
+ @media screen and (max-width: 1060px) {
+
+     .voucher-content,
+     .native-ingredient-intro,
+     .introduced,
+     .maori-recipes-intro,
+     .hamburger-menu input {
+         margin: 0;
+     }
+
+     .menu-heading {
+         margin-bottom: 10px;
+     }
+
+     #kai p,
+     .introduced p,
+     .maori-recipes p {
+         margin: 20px auto 40px;
+         transform: translate(0);
+     }
+
+     .native-ingredient-intro,
+     .introduced,
+     .maori-recipes-intro,
+     #kai p,
+     .introduced p,
+     .maori-recipes p,
+     ul li a,
+     .hamburger-menu input {
+         padding: 0;
      }
 
      .logo {
-         position: absolute;
          top: 2px;
          padding: 10px 10px 10px 20px;
      }
 
-     /*-------------- hamburger menu------------- */
+     .sidebar,
+     .native-ingredient-intro,
+     .introduced,
+     .maori-recipes-intro,
+     .card,
+     .card-sections {
+         width: 100%;
+     }
+
+     .policy-container,
+     .gift-card,
+     .voucher-info,
+     .about,
+     #kai p,
+     .introduced p,
+     .maori-recipes p,
+     .native-ingredient-intro h2,
+     .introduced h2,
+     .maori-recipes-intro h2 {
+         width: 90%;
+     }
+
+     #hours .book,
+     #hours .image-cover {
+         height: 330px;
+     }
+
+     .card .buttons a,
+     .buttons a {
+         width: 200px;
+     }
+
+     .image-cover,
+     .our-story-image,
+     .restaurant-image,
+     .book,
+     .landscape {
+         height: 380px;
+     }
+
+     #header {
+         height: 110px;
+     }
+
+     .voucher-content,
+     .native-ingredient-intro,
+     .introduced,
+     .maori-recipes-intro,
+     .nav-container {
+         display: block;
+     }
+
+     .shellfish,
+     .foraged-forest,
+     .nav-border,
+     .mobile-menu {
+         display: none;
+     }
+
+     #header,
+     .menu-container-appetizers,
+     .card-culture-images,
+     .restaurant-image {
+         position: relative;
+     }
+
+     #home .buttons {
+         justify-content: center;
+     }
+
+     .logo,
+     .hamburger-menu {
+         position: absolute;
+     }
+
+     .menu-container-appetizers,
+     .card-culture-images,
+     .restaurant-image {
+         z-index: -1;
+     }
+
+     .footer-container,
+     .info,
+     .navbar,
+     .hamburger-menu {
+         flex-direction: column;
+     }
+
+     .info,
+     .footer-container {
+         align-items: center;
+     }
+
+     .footer-container,
+     .recipes {
+         gap: 30px;
+     }
+
+     /*----------------------- hamburger menu---------------------- */
+
      #home-nav {
          display: inline-block;
      }
@@ -1667,10 +2053,8 @@
          /* square root of two */
          --x-width: calc(var(--hamburger-height) * 1.41421356237);
          display: flex;
-         flex-direction: column;
          gap: var(--hamburger-gap);
          width: max-content;
-         position: absolute;
          top: var(--hamburger-margin);
          right: var(--hamburger-margin);
          z-index: 2;
@@ -1678,14 +2062,6 @@
          margin: 20px 10px 10px;
      }
 
-     .mobile-menu {
-         display: none;
-     }
-
-     .hamburger-menu:has(input:checked) {
-         --dark: white;
-         --background: var(--dark);
-     }
 
      .hamburger-menu:has(input:focus-visible)::before,
      .hamburger-menu:has(input:focus-visible)::after,
@@ -1694,13 +2070,13 @@
          box-shadow: 0 0 0 1px var(--dark);
      }
 
+
      .hamburger-menu::before,
      .hamburger-menu::after,
      .hamburger-menu input {
          content: "";
          width: var(--bar-width);
          height: var(--bar-height);
-         background-color: var(--dark);
          border-radius: 9999px;
          transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, translate 200ms ease-in-out, background-color 200ms ease-in-out;
          transform-origin: left center;
@@ -1708,21 +2084,22 @@
 
      .hamburger-menu input {
          appearance: none;
-         padding: 0;
-         margin: 0;
          outline: none;
          pointer-events: none;
      }
 
+     .hamburger-menu:has(input:checked)::after,
+     .hamburger-menu:has(input:checked)::before {
+         width: var(--x-width);
+     }
+
      .hamburger-menu:has(input:checked)::before {
          rotate: 45deg;
-         width: var(--x-width);
          translate: 0 calc(var(--bar-height) / -2);
      }
 
      .hamburger-menu:has(input:checked)::after {
          rotate: -45deg;
-         width: var(--x-width);
          translate: 0 calc(var(--bar-height) / 2);
      }
 
@@ -1736,52 +2113,93 @@
          translate: -150%;
          padding: 0.5rem 1rem;
          padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-         background-color: var(--dark);
-         color: var(--pale);
-         width: 100%;
-         min-height: 430px;
+         max-height: 650px;
      }
 
-     .sidebar .navbar a {
-         color: var(--pale);
+     .sidebar-home {
+        min-height: 690px;
+        padding: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem) 1rem 0;
+     }
+     .sidebar .animate-size:active,
+     #home-nav a:active {
+         width: 150px;
+         padding: 10px 0 0 5px;
      }
 
-     .sidebar .navbar a:hover {
-         color: rgb(161, 195, 211);
+     .dropdown .animate-size:active {
+         width: 80px;
+         margin-bottom: 10px;
+         padding: 10px 5px 0;
+         transform: translate(-5px);
      }
 
      .hamburger-menu:has(input:checked)+.sidebar {
          translate: 0;
      }
 
-     .sidebar .dropdown a {
-         color: var(--dark);
+     .navbar {
+         justify-content: flex-end;
+         padding-left: 20px;
+         height: 650px;
+         gap: 3px;
      }
 
+     .home-navbar {
+        height: 690px;
+     }
+
+     ul li ul.dropdown {
+         left: 110px;
+         top: 0;
+         padding: 20px 20px 0;
+         width: 78px;
+     }
+
+     /*----------------------- colour ----------------------- */
+
+     #header .dropdown a:active,
+     .sidebar .navbar a,
+     .sidebar,
+     .dropdown .animate-size:active,
      .fa-solid.fa-caret-down::before {
          color: var(--pale);
      }
 
-     .nav-container {
-         display: block;
+     #header .dropdown a {
+         color: var(--dark);
      }
 
-     .navbar {
-         flex-direction: column;
+     #header .dropdown a:active {
+         background-color: var(--light);
+     }
+
+     .hamburger-menu:has(input:checked) {
+         --dark: white;
+         --background: var(--dark);
+     }
+
+     .sidebar .animate-size:active,
+     #home-nav a:active {
+         color: var(--pale);
+     }
+
+     .navbar,
+     .sidebar,
+     .dropdown .animate-size:active,
+     .hamburger-menu::before,
+     .hamburger-menu::after,
+     .hamburger-menu input {
          background-color: var(--dark);
      }
 
-     ul li ul.dropdown {
-         left: 120px;
-         top: 10px;
-         padding-top: 20px;
+     #header .dropdown a:hover,
+     .sidebar .animate-size:hover,
+     #home-nav a:hover {
+         animation-name: none;
+         color: rgb(161, 195, 211);
      }
 
-     /* -- font-size -- */
-     h1 {
-         margin-top: 0;
-         font-size: 2.2em;
-     }
+     /* ------------------------- Text -------------------- */
 
      .native-ingredient-intro h2,
      .introduced h2,
@@ -1790,7 +2208,6 @@
          text-align: left;
          padding: 40px 0 0 0;
          margin: 0 auto 40px;
-         width: 90%;
      }
 
      .buttons .reservation-btn a,
@@ -1810,30 +2227,7 @@
          font-size: 1em;
      }
 
-     /* -- buttons -- */
-     .card .buttons a {
-         width: 200px;
-     }
-
-     /* .buttons>.reservation-btn a{height: 100%;}*/
-     /* -- Shared code -- */
-     #kai p,
-     .introduced p,
-     .maori-recipes p {
-         width: 90%;
-         padding: 0;
-         margin: 20px auto 40px;
-         transform: translate(0);
-     }
-
-     .image-cover,
-     .our-story-image,
-     .restaurant-image,
-     .book,
-     .landscape {
-         height: 380px;
-     }
-
+     #home .buttons a,
      .native-ingredient-intro h2,
      .introduced h2,
      .maori-recipes-intro h2,
@@ -1846,31 +2240,20 @@
          text-align: center;
      }
 
+     /* --------------------------box-shadow ------------------ */
+
      .menu-container-appetizers,
-     .card-culture-images,
-     .restaurant-image,
-     .culture-container,
-     .audio {
-         z-index: -1;
-         position: relative;
+     .menu-container,
+     .menu-container-desserts,
+     .menu-container-beverages {
+         box-shadow: none;
      }
 
-     .our-restaurant,
-     #reservation .page-top-headings,
-     #reservation .page-top-headings,
-     #our-story-article .our-restaurant {
-         margin: 50px 10px;
-     }
+     /* -------------------------- home ---------------------- */
 
-     /* --------------------------home ------------------ */
      .card-image {
          flex-direction: column;
          max-height: 100%;
-     }
-
-     .card,
-     .card-sections {
-         width: 100%;
      }
 
      .card-image-even {
@@ -1882,24 +2265,10 @@
          border-radius: 0 0 8px 8px;
      }
 
-     /* ------------------about ---------------------- */
-     .about {
-         width: 90%;
-     }
+     /* -------------------------- menu ---------------------- */
 
-     /*------------------ reservations ----------------------*/
-     .info {
-         flex-direction: column;
-         align-items: center;
-     }
-
-     /* --------------------------menu ------------------ */
      #menu .page-top-headings {
          margin-bottom: 25px;
-     }
-
-     .menu-heading {
-         margin-bottom: 10px;
      }
 
      .menu-container-appetizers,
@@ -1907,7 +2276,6 @@
      .menu-container-desserts,
      .menu-container-beverages {
          margin-bottom: 80px;
-         box-shadow: none;
      }
 
      #menu>.info {
@@ -1920,7 +2288,6 @@
      .beverages {
          grid-column: 1/9;
          grid-row: 11/25;
-         box-shadow: none;
          width: 80%;
          margin: 20px auto;
          box-shadow: var(--shadow-elevation-medium);
@@ -1928,6 +2295,78 @@
 
      .beverages {
          width: 87%;
+     }
+
+     .venison,
+     .pork,
+     .salmon {
+         grid-column: 5 / 9;
+     }
+
+
+     .foraged-forest,
+     .animal-foods,
+     .shellfish,
+     .salmon {
+         grid-row: 1 / 7;
+     }
+
+     .snapper,
+     .bread,
+     .scallops,
+     .chowder {
+         grid-column: 1 / 5;
+     }
+
+     .kereru,
+     .pork,
+     .scallops,
+     .snapper {
+         grid-row: 1 / 5;
+     }
+
+
+     .fish,
+     .lamb {
+         grid-row: 5 / 9;
+     }
+
+     .venison,
+     .chowder {
+         grid-row: 9 / 13;
+     }
+
+     .kereru,
+     .book-now {
+         grid-column: 1 / 3;
+     }
+
+     .reserve-btn,
+     .top {
+         grid-row: 2 / 3;
+     }
+
+     .kina,
+     .puha {
+         grid-column: 7 / 8;
+     }
+
+     .puha,
+     .horopito,
+     .muttonbird {
+         grid-row: 6 / 7;
+     }
+
+     .paua,
+     .huhu {
+         grid-row: 1 / 3;
+     }
+
+     .moa,
+     .foraged-forest,
+     .animal-foods,
+     .shellfish {
+         grid-column: 3 / 4;
      }
 
      .mains {
@@ -1938,49 +2377,16 @@
          grid-row: 16 / 25;
      }
 
-     .salmon {
-         grid-column: 5 / 9;
-         grid-row: 1 / 7;
-     }
-
-     .snapper {
-         grid-column: 1 / 5;
-         grid-row: 1 / 5;
-     }
-
      .bread {
-         grid-column: 1 / 5;
          grid-row: 5 / 11;
      }
 
      .fish {
          grid-column: 6 / 9;
-         grid-row: 5 / 9;
-     }
-
-     .scallops {
-         grid-column: 1 / 5;
-         grid-row: 1 / 5;
-     }
-
-     .chowder {
-         grid-column: 1 /5;
-         grid-row: 9 / 13;
      }
 
      .lamb {
          grid-column: 1 / 6;
-         grid-row: 5 / 9;
-     }
-
-     .pork {
-         grid-column: 5 / 9;
-         grid-row: 1 / 5;
-     }
-
-     .venison {
-         grid-column: 5 / 9;
-         grid-row: 9 / 13;
      }
 
      .buttons {
@@ -1989,27 +2395,19 @@
      }
 
      .buttons a {
-         width: 200px;
          margin: 10px;
      }
 
-     .nav-border {
-         display: none;
-     }
-
      .book-now {
-         grid-column: 1 / 3;
          grid-row: 1 / 2;
      }
 
      .top {
          grid-column: 1 / 2;
-         grid-row: 2 / 3;
      }
 
      .reserve-btn {
          grid-column: 2 / 3;
-         grid-row: 2 / 3;
      }
 
      .top,
@@ -2025,27 +2423,17 @@
          padding: 15px 0;
      }
 
-     /* ----Maori culture --- */
+     /* -------------------- Maori culture -------------- */
+
      .culture-container {
          grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
          margin: 0 10px 35px;
          gap: 20px;
      }
 
-     /* ------------------ kai ------------------ */
-     .native-ingredient-intro,
-     .introduced,
-     .maori-recipes-intro {
-         display: block;
-         margin: 0;
-         padding: 0;
-         width: 100%;
-     }
+     /* -------------------------- kai ------------------ */
 
-     .kaiwhenua-images {
-         margin-bottom: 0;
-     }
-
+     .kaiwhenua-images,
      #kai hr {
          margin-bottom: 0;
      }
@@ -2056,23 +2444,19 @@
      }
 
      .recipes {
-         gap: 30px;
          margin: 0px 10px 30px 10px;
-         padding: 5px 0 20px;
+         padding: 5px 0 50px;
      }
 
-     #kai .recipes-squares {
-         width: 270px;
-         height: 270px;
-     }
-
+     .cover,
+     #kai .recipes-squares,
      #kai .recipes-squares a {
          width: 270px;
-         height: 270px;
      }
 
-     .cover {
-         width: 270px;
+     #kai .recipes-squares,
+     #kai .recipes-squares a {
+         height: 270px;
      }
 
      .fern {
@@ -2080,39 +2464,24 @@
          grid-row: 5 / 7;
      }
 
-     .puha {
-         grid-column: 7 / 8;
-         grid-row: 6 / 7;
-     }
-
      .horopito {
          grid-column: 6 / 7;
-         grid-row: 6 / 7;
      }
 
      .huhu {
          grid-column: 3 / 5;
-         grid-row: 1 / 3;
      }
 
      .moa {
-         grid-column: 3 / 4;
          grid-row: 3 / 5;
-     }
-
-     .kereru {
-         grid-column: 1 / 3;
-         grid-row: 1 / 5;
      }
 
      .muttonbird {
          grid-column: 4 / 6;
-         grid-row: 6 / 7;
      }
 
      .paua {
          grid-column: 5 / 7;
-         grid-row: 1 / 3;
      }
 
      .whitebait {
@@ -2126,7 +2495,6 @@
      }
 
      .kina {
-         grid-column: 7 / 8;
          grid-row: 4 / 6;
      }
 
@@ -2138,40 +2506,33 @@
      .foraged-forest,
      .animal-foods,
      .shellfish {
-         grid-column: 3 / 4;
-         grid-row: 1 / 7;
          z-index: 99;
          line-height: 1.7;
          padding: 15px;
      }
 
-     .shellfish,
-     .foraged-forest {
-         display: none;
-     }
-
-     /* -------------voucher--------- */
-     .voucher-content {
-         display: block;
-         margin: 0;
-     }
+     /* -------------------- voucher ------------------ */
 
      .gift-card,
      .voucher-info {
          margin: 50px auto;
-         width: 90%;
      }
 
      .gift-card {
          width: 400px;
      }
 
-     /* ------------- footer --------------- */
-     .footer-container {
-         flex-direction: column;
-         gap: 30px;
-         align-items: center;
+     /* --------------------- staff --------------------- */
+
+     .weeks {
+         gap: 0;
      }
+
+     #staff .buttons {
+         margin-top: 30px;
+     }
+
+     /* --------------------- footer -------------------- */
 
      footer p {
          margin-top: 40px;
@@ -2180,8 +2541,26 @@
 
  /* ########## 19c. Media query: screen-size, max-width; 635px ########## */
  @media screen and (max-width: 635px) {
+
+     .nz-ingredients-container,
+     .card {
+         margin: 0;
+     }
+
+     #header {
+         margin-bottom: 20px;
+     }
+
+     .image-cover,
+     .our-story-image,
+     .restaurant-image,
+     .book,
+     .landscape {
+         height: 250px;
+     }
+
      h1 {
-         font-size: 2em;
+         font-size: 2.7em;
      }
 
      #contact .book-now,
@@ -2201,21 +2580,20 @@
          font-size: 1em;
      }
 
-     /* -- header -- */
-     #header {
-         margin-bottom: 20px;
+     .nz-ingredients-container,
+     .card {
+         text-align: center;
      }
 
-     /* css background images */
-     .image-cover,
-     .our-story-image,
-     .restaurant-image,
-     .book,
-     .landscape {
-         height: 250px;
+     .map img,
+     .odd-image,
+     .even-image,
+     .card-image {
+         border-radius: 0
      }
 
      /* ------------------------- home --------------------- */
+
      #home p {
          padding-top: 10px;
      }
@@ -2225,21 +2603,17 @@
      }
 
      .card-image {
-         border-radius: 0;
          margin: 0 0 60px 0;
      }
 
      .odd-image,
      .even-image {
-         border-radius: 0;
          max-height: 380px;
      }
 
      .card {
-         margin: 0;
          padding: 20px;
-         height: 420px;
-         display: block;
+         align-items: center;
      }
 
      .card-sections {
@@ -2254,16 +2628,14 @@
          margin-left: 0;
      }
 
-     #home hr {
-         width: 80px;
-     }
+     /*------------------------- about ---------------------*/
 
-     /* about */
      .about {
          line-height: 1.6;
      }
 
-     /* reservation */
+    /*------------------------- reservation ---------------------*/
+
      #reservation .google-form {
          height: 1030px;
      }
@@ -2277,25 +2649,413 @@
          flex-wrap: wrap;
      }
 
-     /* menu */
+     /*--------------------------- menu ------------------------ */
+
      .appetizers,
      .mains,
      .desserts {
          width: 75%;
      }
 
-     /* maori culture */
+     /*------------------------ maori culture ------------------- */
+
      .culture-container {
          grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
          gap: 30px;
      }
 
-     /* maori kai */
+     /*------------------------ maori kai -------------------------*/
+
+     .nz-ingredients-container {
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 50px 1fr 50px 1fr;
+     }
+
+     .nz-ingredients-container>.land {
+         grid-row: 1 / 2;
+     }
+
+     .nz-ingredients-container>.sea {
+         grid-row: 3 / 4;
+     }
+
+
+     .nz-ingredients-container>.sea,
+     .nz-ingredients-container>.land {
+         grid-column: 1 / 3;
+     }
+
+     .sea-life,
+     .forest {
+         grid-column: 1 / 2;
+     }
+
+     .animal-food,
+     .forest {
+         grid-row: 2 / 3;
+     }
+
+     .animal-food,
+     .shellfishs {
+         grid-column: 2 / 3;
+     }
+
+     .muttonbird,
+     .fern {
+         grid-column: 1 / 4;
+     }
+
+     .puha,
+     .horopito {
+         grid-row: 1 / 3;
+     }
+
+     .shellfishs,
+     .sea-life {
+         grid-row: 4 / 5;
+     }
+
+     .kaiwhenua-images {
+         transform: translate(0, -40px);
+     }
+
+     .kaiwhenua-images {
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: repeat(10, 7vw);
+         margin-top: 80px;
+     }
+
+     .fern {
+         grid-row: 4 / 7;
+     }
+
+     .puha {
+         grid-column: 6 / 9;
+     }
+
+     .horopito {
+         grid-column: 4 / 6;
+     }
+
+     .huhu {
+         grid-column: 1 / -1;
+         grid-row: 7 / 11;
+     }
+
+     .muttonbird {
+         grid-row: 1/ 4;
+     }
+
+     .paua {
+         grid-column: 4 / 5;
+         grid-row: 6 / 7;
+     }
+
+     .whitebait {
+         grid-column: 4 / 9;
+         grid-row: 3 / 6;
+     }
+
+     .eels {
+         grid-column: -1 / 9;
+         grid-row: 6 / 11;
+     }
+
+     .pipi,
+     .kina,
+     .kereru,
+     .moa,
+     .info-here {
+         display: none;
+     }
+
+     /* --------------------- hours --------------------- */
+
+     #hours .book,
+     #hours .image-cover {
+         height: 200px;
+     }
+
+     /* ----------------------- voucher ------------------- */
+
+     .gift-card {
+         width: 360px;
+     }
+
+     /*------------------------ contact ---------------------*/
+
+     .map img {
+         width: 100vw;
+     }
+
+     .map {
+         height: 550px;
+         background-color: white;
+         box-shadow: none;
+     }
+
+     #contact .our-restaurant {
+         margin-bottom: 0;
+     }
+ }
+
+ /* ########## 19d. Media query: screen-size, max-width; 400px ########## */
+
+ @media screen and (max-width: 400px) {
+
+     #statement {
+         margin: auto;
+     }
+
+     #statement,
+     .roster-week h4,
+     #iframes {
+         width: 100%;
+     }
+
+     .nz-ingredients-container,
+     .google-form {
+         margin: 0;
+     }
+
+     .kaiwhenua-images {
+         margin-top: 0;
+     }
+
+     #contact .reserve-btn,
+     #hours .reserve-btn,
+     .native-ingredients,
+     .privacy-answers h4 {
+         margin-bottom: 20px;
+     }
+
+     #about .buttons a,
+     #maori-culture .reserve-btn,
+     #maori-culture .buttons a {
+         padding-bottom: 20px;
+     }
+
+     .buttons a {
+         padding: 20px 10px 0;
+     }
+
+     hr {
+         width: 80%;
+     }
+
+     .top,
+     .reserve-btn {
+         width: 60px;
+     }
+
+     #reservation .buttons a,
+     #home .buttons a,
+     .buttons a,
+     #contact .reserve-btn,
+     #contact .top,
+     #hours .reserve-btn,
+     #hours .top {
+         height: 44px;
+     }
+
+     .image-cover,
+     .our-story-image,
+     .restaurant-image,
+     .book,
+     .landscape {
+         height: 200px;
+     }
+
+     .nav-border {
+         display: none;
+     }
+
+     #menu .buttons,
+     #contact .buttons,
+     #hours .buttons {
+         flex-direction: column;
+     }
+
+     #contact .reserve-btn,
+     #hours .reserve-btn {
+         order: 2;
+     }
+
+     #menu .top,
+     #contact .top,
+     #hours .top {
+         order: 3;
+     }
+
+     #contact .book-now,
+     #hours .book-now {
+         margin: 20px 0;
+         order: 1;
+     }
+
+     .book-now,
+     .nz-ingredients-container>.land {
+         grid-row: 1 / 2;
+     }
+
+     .top,
+     .reserve-btn {
+         grid-row: 2 / 3;
+     }
+
+     .book-now {
+         grid-column: 1 / 3;
+     }
+
+     .top {
+         grid-column: 1 / 2;
+     }
+
+     .reserve-btn {
+         grid-column: 2 / 3;
+     }
+
+     /*-------------- Text / borders ------------  */
+
+     h1 {
+         font-size: 2.2em;
+     }
+
+     .reserve .book-now,
+     #kai h2 {
+         font-size: 1.5em;
+     }
+
+     .nz-ingredients-container {
+         text-align: center;
+     }
+
+     #iframes,
+     .google-form {
+         border-radius: 0;
+     }
+
+     /* ---------------- header ----------------- */
+
+     #header {
+         margin-bottom: 20px;
+     }
+
+     #home .buttons a {
+         padding: 20px 20px 0;
+     }
+
+     #home .buttons {
+         justify-content: center;
+     }
+
+     /* -------------- Reservations -------------- */
+
+     #reservation .page-top-headings {
+         margin-bottom: 40px;
+     }
+
+     .google-form {
+         position: static;
+         padding: 0;
+         background-image: linear-gradient(black, white);
+         margin-top: -4px;
+     }
+
+     #reservation .google-form,
+     #reservation iframe {
+         height: 1150px;
+     }
+
+     #reservation .google-form {
+         height: 1170px;
+         margin: 30px 0;
+     }
+
+     .iframe-form {
+         width: 95vw;
+         height: 1100px;
+     }
+
+     #reservation .buttons a {
+         padding: 20px 0 0 0;
+     }
+
+     .page-top-headings {
+         margin: 70px 20px;
+     }
+
+     /* ------------------- Menu -------------------*/
+
+     #menu .page-top-headings {
+         margin-top: 0;
+     }
+
+     .beverages {
+         padding: 10px 10px;
+     }
+
+     .beverages table {
+         padding: 15px 0;
+     }
+
+     .appetizers,
+     .mains,
+     .desserts {
+         width: 70%;
+     }
+
+     .fish,
+     .lamb {
+         grid-row: 5 / 9;
+     }
+
+
+     .chowder,
+     .scallops {
+         grid-column: 1 / 5;
+     }
+
+
+     .scallops,
+     .pork {
+         grid-row: 1 / 5;
+     }
+
+
+     .chowder,
+     .venison {
+         grid-row: 9 / 13;
+     }
+
+     .pork,
+     .venison {
+         grid-column: 5 / 9;
+     }
+
+     .fish {
+         grid-column: 6 / 9;
+     }
+
+     .chowder {
+         grid-row: 9 / 13;
+     }
+
+     .lamb {
+         grid-column: 1 / 6;
+     }
+
+     /* ---------------- Maori culture ------------- */
+
+     .culture-container {
+         grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+     }
+
+     /* -----------------Maori kai ---------------- */
+
      .nz-ingredients-container {
          grid-template-columns: 1fr 1fr;
          grid-template-rows: 50px 1fr 1fr 50px 1fr 1fr;
-         text-align: center;
-         margin: 0;
      }
 
      .nz-ingredients-container h4 {
@@ -2303,13 +3063,8 @@
          color: var(--dark);
      }
 
-     .native-ingredients {
-         margin-bottom: 20px;
-     }
-
      .nz-ingredients-container>.land {
          grid-column: 1 / 3;
-         grid-row: 1 / 2;
      }
 
      .nz-ingredients-container>.sea {
@@ -2337,265 +3092,15 @@
          grid-row: 6 / 7;
      }
 
-     .kaiwhenua-images {
-         transform: translate(0, -40px);
-     }
-
-     /* voucher */
-     .gift-card {
-         width: 360px;
-     }
-
-     /* contact */
-     .map img {
-         width: 100vw;
-         border-radius: 0;
-     }
-
-     .map {
-         height: 550px;
-         background-color: white;
-         box-shadow: none;
-     }
-
-     #contact .our-restaurant {
-         margin-bottom: 0;
-     }
- }
-
- /* ########## 19d. Media query: screen-size, max-width; 400px ########## */
- @media screen and (max-width: 400px) {
-
-     .reserve .book-now,
-     #kai h2 {
-         font-size: 1.5em;
-     }
-
-     .card-culture-container p,
-     #kai p {
-         font-size: 0.9em;
-     }
-
-     hr {
-         width: 80%;
-     }
-
-     #statement {
-         margin: auto;
-         width: 100%;
-     }
-
-     .our-restaurant,
-     #reservation .page-top-headings,
-     #reservation .page-top-headings,
-     #our-story-article .our-restaurant {
-         margin: 30px 10px;
-     }
-
-     .image-cover,
-     .our-story-image,
-     .restaurant-image,
-     .book,
-     .landscape {
-         height: 200px;
-     }
-
-     /* -- buttons -- */
-     #menu .buttons {
-         flex-direction: column;
-     }
-
-     #menu .top {
-         order: 3;
-     }
-
-     .nav-border {
-         display: none;
-     }
-
-     .book-now {
-         grid-column: 1 / 3;
-         grid-row: 1/2;
-     }
-
-     .top {
-         grid-column: 1 / 2;
-         grid-row: 2/3;
-     }
-
-     .reserve-btn {
-         grid-column: 2 / 3;
-         grid-row: 2/3;
-     }
-
-     .top,
-     .reserve-btn {
-         width: 60px;
-     }
-
-     .buttons a {
-         height: 44px;
-         padding: 20px 10px 0;
-     }
-
-     #contact .buttons,
-     #hours .buttons {
-         flex-direction: column;
-     }
-
-     #contact .reserve-btn,
-     #contact .top,
-     #hours .reserve-btn,
-     #hours .top {
-         height: 44px;
-     }
-
-     #about .buttons a,
-     #maori-culture .reserve-btn,
-     #maori-culture .buttons a {
-         padding-bottom: 20px;
-     }
-
-     #contact .reserve-btn,
-     #hours .reserve-btn {
-         order: 2;
-         margin-bottom: 20px;
-     }
-
-     #contact .top,
-     #hours .top {
-         order: 3;
-     }
-
-     #contact .book-now,
-     #hours .book-now {
-         margin: 20px 0;
-         order: 1;
-     }
-
-     /* -- header -- */
-     #header {
-         margin-bottom: 20px;
-     }
-
-     #home .buttons a {
-         padding: 20px 20px 0;
-         height: 44px;
-     }
-
-     /* ----------- Home -------------------- */
-     .card {
-         height: 380px;
-     }
-
-     .card-sections {
-         height: 380px;
-     }
-
-     /* ------------ Reservations ------------ */
-     #reservation .page-top-headings {
-         margin-bottom: 40px;
-     }
-
-     .google-form {
-         position: static;
-         padding: 0;
-         margin: 0;
-         background-image: linear-gradient(black, white);
-         border-radius: 0;
-         margin-top: -4px;
-     }
-
-     #reservation iframe {
-         height: 1150px;
-     }
-
-     #reservation .google-form {
-         height: 1170px;
-         margin: 30px 0;
-     }
-
-     .iframe-form {
-         width: 95vw;
-         height: 1100px;
-     }
-
-     #reservation .buttons a {
-         width: 200px;
-         height: 44px;
-         padding: 20px 0 00;
-     }
-
-     .page-top-headings {
-         margin: 70px 20px;
-     }
-
-     /* ------------- Menu -------------------*/
-     #menu .page-top-headings {
-         margin-top: 0;
-     }
-
-     .beverages {
-         padding: 10px 10px;
-     }
-
-     .beverages table {
-         padding: 15px 0;
-     }
-
-     .appetizers,
-     .mains,
-     .desserts {
-         width: 70%;
-     }
-
-     .fish {
-         grid-column: 6 / 9;
-         grid-row: 5 / 9;
-     }
-
-     .scallops {
-         grid-column: 1 / 5;
-         grid-row: 1 / 5;
-     }
-
-     .chowder {
-         grid-column: 1 /5;
-         grid-row: 9 / 13;
-     }
-
-     .lamb {
-         grid-column: 1 / 6;
-         grid-row: 5 / 9;
-     }
-
-     .pork {
-         grid-column: 5 / 9;
-         grid-row: 1 / 5;
-     }
-
-     .venison {
-         grid-column: 5 / 9;
-         grid-row: 9 / 13;
-     }
-
-     /* ---------- Maori culture ---------- */
-     .culture-container {
-         grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
-     }
-
-     /* ------------- Voucher ---------------*/
-     .card {
-         margin-bottom: 40px;
-     }
+     /* ---------------- Voucher ----------------*/
 
      .gift-card {
          width: 300px;
-         height: 220px
      }
 
-     .gift {
-         height: 220px
+     .gift,
+     .gift-card {
+         height: 220px;
      }
 
      .gift-heading {
@@ -2606,19 +3111,45 @@
          height: 300px;
      }
 
-     /* -- iframes -- */
+     #hours .book,
+     #hours .image-cover {
+         height: 150px;
+     }
+
+     /* ---------------- staff -----------------------*/
+
+     .roster-week {
+         padding: 10px;
+     }
+
+     /* ---------------- Privacy Policy -----------------------*/
+
+     #privacy-policy p,
+     #privacy-policy li {
+         line-height: 1.5;
+         font-size: 0.9em;
+     }
+
+     .contact-info li {
+         font-size: 0.8px;
+     }
+
+     .privacy-answers h4 {
+         font-size: 1.1em;
+     }
+
+     #policy .hours {
+         padding-left: 0;
+     }
+
+     /* ----------------- iframes ----------------- */
+
      #iframes {
          left: 0;
          top: 20px;
-         width: 100%;
-         border-radius: 0;
      }
 
      #hours .iframe-container {
          height: 1200px;
-     }
-
-     #reservation .google-form {
-         height: 1150px;
      }
  }

@@ -2,39 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSML13N0J7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KSML13N0J7');
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opening hours</title>
+    <title>Opening hours | The Haukai Restaurant - Kerikeri</title>
+    <meta name="description" content="The Haukai Restaurant, Kerikeri, is open for dinner from Wednesday to Sunday, 5 pm to 10 pm. They are closed on Monday and Tuesday. ">
     <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 
 <body>
     <header id="header">
-        <aside aria-label="The Haukai Restaurant logo" class="logo"><a
-                href="https://vtay369.github.io/haukai-restaurant.github.io/index">
+        <aside aria-label="The Haukai Restaurant logo" class="logo">
+            <a href="/">
                 <h3 class="logo-title">The<br>Haukai</h3>
                 <h4 class="logo-subtitle">Restaurant</h4>
-                <figure aria-label="logo underline"> <img src="./images/underline.png" alt="Logo underline"> </figure>
-            </a> </aside> <label aria-label="mobile-menu" id="hidden-label" class="hamburger-menu"> <input
-                type="checkbox" aria-labelledby="hidden-label" title="drop-down menu checkbox"> <span
-                class="mobile-menu">Mobile menu</span> </label>
+                <figure aria-label="logo underline">
+                    <img src="./images/underline.png" alt="Logo underline">
+                </figure>
+            </a>
+        </aside>
+
+        <label aria-label="mobile-menu" id="hidden-label" class="hamburger-menu">
+            <input type="checkbox" aria-labelledby="hidden-label" title="drop-down menu checkbox">
+            <span class="mobile-menu">Mobile menu</span>
+        </label>
+
         <aside aria-label="navigation sliding sidebar" class="sidebar">
             <nav class="nav-container">
                 <ul class="navbar">
                     <li id="home-nav"><a href="/">Home</a> </li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/reservations">Reservations</a>
+                    <li><a class="animate-size" href="/reservations.html">Reservations</a>
                     </li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/about">About</a></li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/hours">Hours</a></li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/menu">Menu</a></li>
+                    <li><a class="animate-size" href="/about.html">About</a></li>
+                    <li><a class="animate-size" href="/hours.html">Hours</a></li>
+                    <li><a class="animate-size" href="/menu.html">Menu</a></li>
                     <li><a href="#">M&amacr;ori</a>
                         <ul class="dropdown">
-                            <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/culture">Culture</a></li>
-                            <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/kai"> Kai</a></li>
+                            <li><a class="animate-size" href="/culture.html">Culture</a></li>
+                            <li><a class="animate-size" href="/kai.html"> Kai</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/gift-vouchers">Vouchers</a></li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/contact">Contact</a></li>
+                    <li><a class="animate-size" href="/gift-vouchers.html">Vouchers</a></li>
+                    <li><a class="animate-size" href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </aside>
@@ -47,27 +65,33 @@
             <hr>
             <h3> Wednesday to Friday <br><span class="time"> 5pm - 10pm</span> </h3>
         </section>
-        <section aria-label="opening-hours calendar" class="iframe-container"> <iframe id="iframes"
+
+        <section aria-label="opening-hours calendar" class="iframe-container"> 
+            <iframe id="iframes"
                 src="https://calendar.google.com/calendar/embed?height=1150&wkst=2&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&mode=WEEK&showPrint=0&showTabs=0&src=NWNiMWQ1MjI5YzIxNDEyZWFkYTk1MDM1ZDIwMzUxZjFkNzRlZDE4NDk5ZmIwNGQ3ZDU4NTI1YTU1YWNkNGYwZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23616161&color=%230B8043"
-                width="800" height="1150"></iframe> </section>
-        <div class="buttons reserve"> <a class="top" href="#header" title="Scroll to top">To top</a>
-            <h2 class="book-now">Book A Table Now...</h2> <a class="reserve-btn" href="./reservations.html"
-                title="Reservations">Reserve</a>
+                width="800" height="1150">
+            </iframe> 
+        </section>
+
+        <div class="buttons reserve"> 
+            <a class="top" href="#header" title="Scroll to top">To top</a>
+            <h2 class="book-now">Book A Table Now...</h2> 
+            <a class="reserve-btn" href="./reservations.html" title="Reservations">Reserve</a>
         </div>
     </main>
+
     <footer>
         <div class="footer-container">
-            <aside aria-label="Staff login to roster" class="staff">
-                <h4><a href="https://vtay369.github.io/haukai-restaurant.github.io/staff"> Staff Roster</a></h4>
-            </aside>
             <aside aria-label="phone contact">
                 <h4>Phone</h4>
                 <p>094014019</p>
             </aside>
+
             <aside aria-label="location">
                 <h4>Location</h4>
                 <p> 1 Island Street <br>Kerikeri, Bay of Islands</p>
             </aside>
+
             <aside aria-label="hours" class="opening-hours">
                 <h4>Opening Hours</h4>
                 <ul class="hours">
@@ -79,7 +103,9 @@
                 </ul>
             </aside>
         </div>
-        <p class="copywright">&copy; The Haukai Restaurant 2024</p>
+
+        <p class="copywright copy">&copy; 2024 The Haukai Restaurant.  All rights reserved.</p>
+        <p class="copywright"> <a href="privacy-policy.html">Privacy Policy</a> </p>
     </footer>
 </body>
 

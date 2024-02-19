@@ -2,62 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSML13N0J7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KSML13N0J7');
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>maori culture</title>
+    <title>Explore the rich Maori culture in New Zealand | The Haukai Restaurant</title>
+    <meta name="description"
+        content="Maori culture is an integral part of New Zealand's identity. At The Haukai Restaurant, we believe that a unique dining experience in New Zealand involves learning about the Māori people, their rich history, and culture while experiencing Māori Kai.">
     <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 
 <body>
     <header id="header">
-        <aside aria-label="The Haukai Restaurant logo" class="logo"><a
-                href="https://vtay369.github.io/haukai-restaurant.github.io/index">
+        <aside aria-label="The Haukai Restaurant logo" class="logo">
+            <a href="/">
                 <h3 class="logo-title">The<br>Haukai</h3>
                 <h4 class="logo-subtitle">Restaurant</h4>
-                <figure aria-label="logo underline"> <img src="./images/underline.png" alt="Logo underline"> </figure>
-            </a> </aside> <label aria-label="mobile-menu" id="hidden-label" class="hamburger-menu"> <input
-                type="checkbox" aria-labelledby="hidden-label" title="drop-down menu checkbox"> <span
-                class="mobile-menu">Mobile menu</span> </label>
+                <figure aria-label="logo underline">
+                    <img src="./images/underline.png" alt="Logo underline">
+                </figure>
+            </a>
+        </aside>
+
+        <label aria-label="mobile-menu" id="hidden-label" class="hamburger-menu">
+            <input type="checkbox" aria-labelledby="hidden-label" title="drop-down menu checkbox">
+            <span class="mobile-menu">Mobile menu</span>
+        </label>
+
         <aside aria-label="navigation sliding sidebar" class="sidebar">
             <nav class="nav-container">
                 <ul class="navbar">
                     <li id="home-nav"><a href="/">Home</a> </li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/reservations">Reservations</a>
+                    <li><a class="animate-size" href="/reservations.html">Reservations</a>
                     </li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/about">About</a> </li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/hours">Hours</a> </li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/menu">Menu</a> </li>
+                    <li><a class="animate-size" href="/about.html">About</a></li>
+                    <li><a class="animate-size" href="/hours.html">Hours</a></li>
+                    <li><a class="animate-size" href="/menu.html">Menu</a></li>
                     <li><a href="#">M&amacr;ori</a>
                         <ul class="dropdown">
-                            <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/culture">Culture</a>
-                            </li>
-                            <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/kai"> Kai</a></li>
+                            <li><a class="animate-size" href="/culture.html">Culture</a></li>
+                            <li><a class="animate-size" href="/kai.html"> Kai</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/gift-vouchers">Vouchers</a> </li>
-                    <li><a href="https://vtay369.github.io/haukai-restaurant.github.io/contact">Contact</a> </li>
+                    <li><a class="animate-size" href="/gift-vouchers.html">Vouchers</a></li>
+                    <li><a class="animate-size" href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </aside>
     </header>
+
     <main id="maori-culture">
         <div class="our-restaurant">
             <h1> M&amacr;ori Culture</h1>
-            <h3 id="statement">The M&amacr;ori people are the indigenous Polynesian people of New Zealand, also known as
-                Aotearoa. </h3>
+            <h3 id="statement">M&amacr;ori people are the indigenous Polynesian people of New Zealand</h3>
         </div>
+
         <div class="audio">
             <div class="info-here"> </div>
             <figure class="audio-info">
-                <figcaption> M&amacr;ori Waiata - Aku Mahi </figcaption> <audio controls>
+                <figcaption> M&amacr;ori Waiata - Aku Mahi </figcaption>
+                <audio controls>
                     <source src="./audio/41+Aku+Mahi.mp3" type="audio/mp3">
                     <source src="./audio/41+Aku+Mahi.ogg" type="audio/ogg">
                     <p> Your browser does not support the <code>audio</code> element. </p>
-                </audio> <a href="https://tereomaori.tki.org.nz/Reo-Maori-resources/Hei-Waiata-Hei-Whakakoakoa2">
-                    Source: Te Kete Ipurangi</a>
+                </audio>
+                <a href="https://tereomaori.tki.org.nz/Reo-Maori-resources/Hei-Waiata-Hei-Whakakoakoa2"> Source: Te Kete Ipurangi</a>
             </figure>
         </div>
         <hr>
+
         <section aria-label="Maori Culture" class="culture-container">
             <article aria-label="Maori carvings" class="card-culture-container tallest"> <img
                     class="card-culture-images carving-image" src="./images/carving.jpg" alt="maori carving">
@@ -73,6 +94,7 @@
                         resonate with a wider New Zealand identity. </p>
                 </div>
             </article>
+
             <article aria-label="Maori welcoming ceremonies" class="card-culture-container short-medium"> <img
                     class="card-culture-images" src="./images/warriors.jpg" alt="maori warriors">
                 <h3 class="heading-culture-type"> P&omacr;wiri </h3>
@@ -85,6 +107,7 @@
                         body) during a tangihanga (funeral). </p>
                 </div>
             </article>
+
             <article aria-label="Maori Kapa Haka" class="card-culture-container short"> <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/tq2K8ak47nM?si=snq_vFQ-IYBBlsdW" title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -98,6 +121,7 @@
                         genre emerged from a mix of European and M&amacr;ori music principles. </p>
                 </div>
             </article>
+
             <article aria-label="Maori haka" class="card-culture-container short-medium"> <iframe width="560"
                     height="315" src="https://www.youtube.com/embed/yiKFYTFJ_kw?si=5lE3Wu1Oauof2vD9"
                     title="YouTube video player"
@@ -113,6 +137,7 @@
                         events in the tribe&apos;s history. </p>
                 </div>
             </article>
+
             <article aria-label="Maori Cloaks" class="card-culture-container tallest final-cards"> <img
                     class="card-culture-images" src="./images/cloak.jpg" alt="maori cloak">
                 <h3 class="heading-culture-type"> Korowai </h3>
@@ -128,6 +153,7 @@
                         and is adorned with hukahuka (tassels) to add to its beauty and ceremonial significance. </p>
                 </div>
             </article>
+
             <article aria-label="Maori waka" class="card-culture-container short-medium final-cards"> <img
                     class="card-culture-images" src="./images/waka.jpg" alt="maori waka">
                 <h3 class="heading-culture-type"> Waka </h3>
@@ -141,6 +167,7 @@
                         hap&umacr;. </p>
                 </div>
             </article>
+
             <article aria-label="Maori legends" class="card-culture-container short-medium final-cards"> <img
                     class="card-culture-images" src="./images/story.jpg" alt=" Maori legends">
                 <h3 class="heading-culture-type"> Nga korero me nga pakiwaitara </h3>
@@ -153,22 +180,25 @@
                 </div>
             </article>
         </section>
-        <div class="buttons reserve"> <a class="top" href="#header" title="Scroll to top">To top</a> <a
-                class="reserve-btn" href="./kai.html" title="Maori Kai">Maori Kai</a> </div>
+
+        <div class="buttons reserve">
+            <a class="top" href="#header" title="Scroll to top">To top</a>
+            <a class="reserve-btn" href="./kai.html" title="Maori Kai">Maori Kai</a>
+        </div>
     </main>
+
     <footer>
         <div class="footer-container">
-            <aside aria-label="Staff login to roster" class="staff">
-                <h4><a href="https://vtay369.github.io/haukai-restaurant.github.io/staff"> Staff Roster</a></h4>
-            </aside>
             <aside aria-label="phone contact">
                 <h4>Phone</h4>
                 <p>094014019</p>
             </aside>
+
             <aside aria-label="location">
                 <h4>Location</h4>
                 <p> 1 Island Street <br>Kerikeri, Bay of Islands</p>
             </aside>
+
             <aside aria-label="hours" class="opening-hours">
                 <h4>Opening Hours</h4>
                 <ul class="hours">
@@ -180,7 +210,9 @@
                 </ul>
             </aside>
         </div>
-        <p class="copywright">&copy; The Haukai Restaurant 2024</p>
+
+        <p class="copywright copy">&copy; 2024 The Haukai Restaurant.  All rights reserved.</p>
+        <p class="copywright"> <a href="privacy-policy.html">Privacy Policy</a> </p>
     </footer>
 </body>
 

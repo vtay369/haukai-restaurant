@@ -1,0 +1,4 @@
+AuthName "Secure directory"
+AuthType Basic
+AuthUserFile "../../passwd/.htpasswd"
+Require valid-user

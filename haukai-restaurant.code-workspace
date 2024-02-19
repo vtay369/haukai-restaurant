@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../BIT607 Web development/Assessment2-BIT607/haukai-restaurant"
+		},
+		{
+			"path": "../../BIT607 Web development/Assessment2-BIT607/passwd"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "haukai-restaurant"
+	}
+}
